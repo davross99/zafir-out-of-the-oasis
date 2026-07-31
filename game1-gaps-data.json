@@ -1,0 +1,1502 @@
+[
+  {
+    "id": 1,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "be",
+    "before": "At the edge of the great desert there",
+    "after": "a hidden oasis called Zafira's Rest, and a small, easy-going community known as the Sahar",
+    "correct": "was",
+    "options": [
+      "was",
+      "were",
+      "been"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 2,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "make",
+    "before": "a hidden oasis called Zafira's Rest, and a small, easy-going community known as the Sahar",
+    "after": "their home among the palms there. Every member of the Sahar",
+    "correct": "made",
+    "options": [
+      "make",
+      "made",
+      "made"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 3,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "know",
+    "before": "their home among the palms there. Every member of the Sahar",
+    "after": "the oasis like an old friend, from the coolest shade to the deepest pool, and Zafir",
+    "correct": "knew",
+    "options": [
+      "know",
+      "knew",
+      "known"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 4,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "have",
+    "before": "the oasis like an old friend, from the coolest shade to the deepest pool, and Zafir",
+    "after": "a favorite spot beside the water, where his blue fur caught the last light of evening. Each morning he",
+    "correct": "had",
+    "options": [
+      "have",
+      "had",
+      "had"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 5,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "go",
+    "before": "a favorite spot beside the water, where his blue fur caught the last light of evening. Each morning he",
+    "after": "swimming with his closest friends, and afterward he",
+    "correct": "went",
+    "options": [
+      "go",
+      "went",
+      "gone"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 6,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "feel",
+    "before": "swimming with his closest friends, and afterward he",
+    "after": "perfectly content to do nothing more than nap in the shade until the sun grew too hot to bear. He",
+    "correct": "felt",
+    "options": [
+      "feel",
+      "felt",
+      "felt"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 7,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "think",
+    "before": "perfectly content to do nothing more than nap in the shade until the sun grew too hot to bear. He",
+    "after": "his days would always look exactly like this, simple and unhurried, until one afternoon a group of desert traders",
+    "correct": "thought",
+    "options": [
+      "think",
+      "thought",
+      "thought"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 8,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "come",
+    "before": "his days would always look exactly like this, simple and unhurried, until one afternoon a group of desert traders",
+    "after": "through the oasis to rest their camels and refill their water skins. Zafir",
+    "correct": "came",
+    "options": [
+      "come",
+      "came",
+      "come"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 9,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "see",
+    "before": "through the oasis to rest their camels and refill their water skins. Zafir",
+    "after": "them first, and he",
+    "correct": "saw",
+    "options": [
+      "see",
+      "saw",
+      "seen"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 10,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "take",
+    "before": "them first, and he",
+    "after": "an immediate interest in their strange, dusty packs and the stories they carried with them. \"We",
+    "correct": "took",
+    "options": [
+      "take",
+      "took",
+      "taken"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 11,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "get",
+    "before": "an immediate interest in their strange, dusty packs and the stories they carried with them. \"We",
+    "after": "here just before sunset,\" one trader said, wiping the dust from her sleeve, \"and tomorrow we travel on to Qalhara, where the whole city is getting ready for the Festival of Lights.\" The trader",
+    "correct": "got",
+    "options": [
+      "get",
+      "got",
+      "got"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 12,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "tell",
+    "before": "here just before sunset,\" one trader said, wiping the dust from her sleeve, \"and tomorrow we travel on to Qalhara, where the whole city is getting ready for the Festival of Lights.\" The trader",
+    "after": "stories of towers strung with lanterns and a marketplace so large a person could get lost in it for days, and Zafir",
+    "correct": "told",
+    "options": [
+      "tell",
+      "told",
+      "told"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 13,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "find",
+    "before": "stories of towers strung with lanterns and a marketplace so large a person could get lost in it for days, and Zafir",
+    "after": "himself asking question after question, hungry for every last detail. \"You",
+    "correct": "found",
+    "options": [
+      "find",
+      "found",
+      "found"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 14,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "mean",
+    "before": "himself asking question after question, hungry for every last detail. \"You",
+    "after": "the whole city lights up at once?\" he asked, wide-eyed, and the trader only",
+    "correct": "mean",
+    "options": [
+      "mean",
+      "meant",
+      "meant"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 15,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "give",
+    "before": "the whole city lights up at once?\" he asked, wide-eyed, and the trader only",
+    "after": "a small nod, clearly amused by his excitement. He",
+    "correct": "gave",
+    "options": [
+      "give",
+      "gave",
+      "given"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 16,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "do",
+    "before": "a small nod, clearly amused by his excitement. He",
+    "after": "something he almost never did that night: he lay awake staring at the stars, letting his mind wander far past the edge of the oasis. He did not",
+    "correct": "did",
+    "options": [
+      "do",
+      "did",
+      "done"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 17,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "say",
+    "before": "something he almost never did that night: he lay awake staring at the stars, letting his mind wander far past the edge of the oasis. He did not",
+    "after": "anything to his friends the next morning, not at first, but the thought of the festival would not",
+    "correct": "say",
+    "options": [
+      "say",
+      "said",
+      "said"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 18,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "leave",
+    "before": "anything to his friends the next morning, not at first, but the thought of the festival would not",
+    "after": "him alone. By evening, he had quietly",
+    "correct": "leave",
+    "options": [
+      "leave",
+      "left",
+      "left"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 19,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "put",
+    "before": "him alone. By evening, he had quietly",
+    "after": "the idea firmly in his head, and something in him had already begun to",
+    "correct": "put",
+    "options": [
+      "put",
+      "put",
+      "put"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 20,
+    "wave": 1,
+    "wave_title": "The Oasis of Sahar",
+    "verb": "become",
+    "before": "the idea firmly in his head, and something in him had already begun to",
+    "after": "restless for the road ahead.",
+    "correct": "become",
+    "options": [
+      "become",
+      "became",
+      "become"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 21,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "go",
+    "before": "The next morning, Zafir",
+    "after": "straight to the oasis elders and told them he wanted to travel to Qalhara with the traders. \"You",
+    "correct": "went",
+    "options": [
+      "go",
+      "went",
+      "gone"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 22,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "know",
+    "before": "straight to the oasis elders and told them he wanted to travel to Qalhara with the traders. \"You",
+    "after": "the desert can be dangerous for someone who has never left the oasis,\" the eldest of the Sahar warned, though her eyes",
+    "correct": "know",
+    "options": [
+      "know",
+      "knew",
+      "known"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 23,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "be",
+    "before": "the desert can be dangerous for someone who has never left the oasis,\" the eldest of the Sahar warned, though her eyes",
+    "after": "kind rather than stern. Zafir",
+    "correct": "were",
+    "options": [
+      "was",
+      "were",
+      "been"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 24,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "say",
+    "before": "kind rather than stern. Zafir",
+    "after": "he understood the risks, but he",
+    "correct": "said",
+    "options": [
+      "say",
+      "said",
+      "said"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 25,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "feel",
+    "before": "he understood the risks, but he",
+    "after": "certain that this was something he needed to do for himself. His friend Yara, another young member of the Sahar, decided she wanted to come too, and together they",
+    "correct": "felt",
+    "options": [
+      "feel",
+      "felt",
+      "felt"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 26,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "make",
+    "before": "certain that this was something he needed to do for himself. His friend Yara, another young member of the Sahar, decided she wanted to come too, and together they",
+    "after": "a simple plan: they would leave with the traders at first light. Zafir",
+    "correct": "made",
+    "options": [
+      "make",
+      "made",
+      "made"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 27,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "have",
+    "before": "a simple plan: they would leave with the traders at first light. Zafir",
+    "after": "very little to pack, only a small woven bag and a smooth blue stone from his favorite pool, which he wanted to",
+    "correct": "had",
+    "options": [
+      "have",
+      "had",
+      "had"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 28,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "give",
+    "before": "very little to pack, only a small woven bag and a smooth blue stone from his favorite pool, which he wanted to",
+    "after": "to the eldest as a promise that he would return. \"I",
+    "correct": "give",
+    "options": [
+      "give",
+      "gave",
+      "given"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 29,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "think",
+    "before": "to the eldest as a promise that he would return. \"I",
+    "after": "you are both very brave, or perhaps very foolish,\" the eldest said with a small smile, \"but I will not stop you.\" Zafir",
+    "correct": "think",
+    "options": [
+      "think",
+      "thought",
+      "thought"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 30,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "find",
+    "before": "you are both very brave, or perhaps very foolish,\" the eldest said with a small smile, \"but I will not stop you.\" Zafir",
+    "after": "it hard to look away from the oasis as they packed their things, and for a moment he almost",
+    "correct": "found",
+    "options": [
+      "find",
+      "found",
+      "found"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 31,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "leave",
+    "before": "it hard to look away from the oasis as they packed their things, and for a moment he almost",
+    "after": "the blue stone behind out of nerves. That evening, the whole community",
+    "correct": "left",
+    "options": [
+      "leave",
+      "left",
+      "left"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 32,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "come",
+    "before": "the blue stone behind out of nerves. That evening, the whole community",
+    "after": "together for a small farewell gathering, and everyone",
+    "correct": "came",
+    "options": [
+      "come",
+      "came",
+      "come"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 33,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "tell",
+    "before": "together for a small farewell gathering, and everyone",
+    "after": "Zafir and Yara to be careful and to come home safely. As they said their goodbyes, Zafir",
+    "correct": "told",
+    "options": [
+      "tell",
+      "told",
+      "told"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 34,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "see",
+    "before": "Zafir and Yara to be careful and to come home safely. As they said their goodbyes, Zafir",
+    "after": "tears in Yara's mother's eyes, though she smiled and told them to enjoy every moment of the journey. Zafir",
+    "correct": "saw",
+    "options": [
+      "see",
+      "saw",
+      "seen"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 35,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "take",
+    "before": "tears in Yara's mother's eyes, though she smiled and told them to enjoy every moment of the journey. Zafir",
+    "after": "one last long look at the glowing pool before the sun disappeared behind the dunes. Early the next morning, before the traders",
+    "correct": "took",
+    "options": [
+      "take",
+      "took",
+      "taken"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 36,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "get",
+    "before": "one last long look at the glowing pool before the sun disappeared behind the dunes. Early the next morning, before the traders",
+    "after": "their camels ready, Zafir and Yara",
+    "correct": "got",
+    "options": [
+      "get",
+      "got",
+      "got"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 37,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "put",
+    "before": "their camels ready, Zafir and Yara",
+    "after": "their small bags onto one of the spare camels and climbed up beside them. Zafir did not quite know what leaving the oasis would",
+    "correct": "put",
+    "options": [
+      "put",
+      "put",
+      "put"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 38,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "mean",
+    "before": "their small bags onto one of the spare camels and climbed up beside them. Zafir did not quite know what leaving the oasis would",
+    "after": "for him, only that he was ready to",
+    "correct": "mean",
+    "options": [
+      "mean",
+      "meant",
+      "meant"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 39,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "do",
+    "before": "for him, only that he was ready to",
+    "after": "it, whatever came next, and as the oasis grew smaller behind them, something in him quietly began to",
+    "correct": "do",
+    "options": [
+      "do",
+      "did",
+      "done"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 40,
+    "wave": 2,
+    "wave_title": "The Long Goodbye",
+    "verb": "become",
+    "before": "it, whatever came next, and as the oasis grew smaller behind them, something in him quietly began to",
+    "after": "a little more sure of himself with every step.",
+    "correct": "become",
+    "options": [
+      "become",
+      "became",
+      "become"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 41,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "be",
+    "before": "For three days, Zafir and Yara",
+    "after": "part of the traders' caravan, learning the slow rhythm of desert travel: walk before dawn, rest through the worst heat, and walk again as the sky cooled toward evening. Zafir",
+    "correct": "were",
+    "options": [
+      "was",
+      "were",
+      "been"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 42,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "have",
+    "before": "part of the traders' caravan, learning the slow rhythm of desert travel: walk before dawn, rest through the worst heat, and walk again as the sky cooled toward evening. Zafir",
+    "after": "never seen so much empty sand in his life, and at first the endless dunes",
+    "correct": "had",
+    "options": [
+      "have",
+      "had",
+      "had"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 43,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "make",
+    "before": "never seen so much empty sand in his life, and at first the endless dunes",
+    "after": "him a little dizzy. He",
+    "correct": "made",
+    "options": [
+      "make",
+      "made",
+      "made"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 44,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "think",
+    "before": "him a little dizzy. He",
+    "after": "the desert would feel lonely, but instead he",
+    "correct": "thought",
+    "options": [
+      "think",
+      "thought",
+      "thought"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 45,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "find",
+    "before": "the desert would feel lonely, but instead he",
+    "after": "something oddly peaceful in its silence, broken only by the soft steps of the camels. One of the traders, an older man named Rafiq,",
+    "correct": "found",
+    "options": [
+      "find",
+      "found",
+      "found"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 46,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "tell",
+    "before": "something oddly peaceful in its silence, broken only by the soft steps of the camels. One of the traders, an older man named Rafiq,",
+    "after": "Zafir stories about the stars each night, showing him how travelers",
+    "correct": "told",
+    "options": [
+      "tell",
+      "told",
+      "told"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 47,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "know",
+    "before": "Zafir stories about the stars each night, showing him how travelers",
+    "after": "which way was north just by looking up. On the fourth afternoon, the wind",
+    "correct": "knew",
+    "options": [
+      "know",
+      "knew",
+      "known"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 48,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "get",
+    "before": "which way was north just by looking up. On the fourth afternoon, the wind",
+    "after": "stronger without warning, and within minutes the whole caravan",
+    "correct": "got",
+    "options": [
+      "get",
+      "got",
+      "got"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 49,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "see",
+    "before": "stronger without warning, and within minutes the whole caravan",
+    "after": "a wall of sand rising on the horizon. Rafiq shouted a warning as a storm",
+    "correct": "saw",
+    "options": [
+      "see",
+      "saw",
+      "seen"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 50,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "come",
+    "before": "a wall of sand rising on the horizon. Rafiq shouted a warning as a storm",
+    "after": "rushing toward them across the dunes, and everyone",
+    "correct": "came",
+    "options": [
+      "come",
+      "came",
+      "come"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 51,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "go",
+    "before": "rushing toward them across the dunes, and everyone",
+    "after": "quickly to shelter the camels and cover their faces with cloth. Zafir",
+    "correct": "went",
+    "options": [
+      "go",
+      "went",
+      "gone"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 52,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "take",
+    "before": "quickly to shelter the camels and cover their faces with cloth. Zafir",
+    "after": "Yara's hand and pulled her close as the sand",
+    "correct": "took",
+    "options": [
+      "take",
+      "took",
+      "taken"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 53,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "become",
+    "before": "Yara's hand and pulled her close as the sand",
+    "after": "a stinging, howling blur around them, and for a long, frightening stretch of time, no one could",
+    "correct": "became",
+    "options": [
+      "become",
+      "became",
+      "become"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 54,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "say",
+    "before": "a stinging, howling blur around them, and for a long, frightening stretch of time, no one could",
+    "after": "a single word over the roar of the wind. When the storm finally passed, Zafir",
+    "correct": "say",
+    "options": [
+      "say",
+      "said",
+      "said"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 55,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "give",
+    "before": "a single word over the roar of the wind. When the storm finally passed, Zafir",
+    "after": "a shaky laugh of relief, and Rafiq",
+    "correct": "gave",
+    "options": [
+      "give",
+      "gave",
+      "given"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 56,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "put",
+    "before": "a shaky laugh of relief, and Rafiq",
+    "after": "a steady hand on his shoulder. \"You",
+    "correct": "put",
+    "options": [
+      "put",
+      "put",
+      "put"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 57,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "do",
+    "before": "a steady hand on his shoulder. \"You",
+    "after": "well for someone who has never seen a sandstorm before,\" he said warmly. The next day, the caravan turned off the main track to rest at a hidden canyon Rafiq knew well, where cool pools of water collected beneath a small waterfall between high red rock walls. Zafir",
+    "correct": "did",
+    "options": [
+      "do",
+      "did",
+      "done"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 58,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "feel",
+    "before": "well for someone who has never seen a sandstorm before,\" he said warmly. The next day, the caravan turned off the main track to rest at a hidden canyon Rafiq knew well, where cool pools of water collected beneath a small waterfall between high red rock walls. Zafir",
+    "after": "a rush of relief the moment he saw the green plants and clear water after so much empty sand, and for the first time since the storm he let himself relax completely. Yara said the canyon",
+    "correct": "felt",
+    "options": [
+      "feel",
+      "felt",
+      "felt"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 59,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "mean",
+    "before": "a rush of relief the moment he saw the green plants and clear water after so much empty sand, and for the first time since the storm he let himself relax completely. Yara said the canyon",
+    "after": "they could finally wash the sand from their fur and rest their tired feet, and by evening neither of them wanted to",
+    "correct": "meant",
+    "options": [
+      "mean",
+      "meant",
+      "meant"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 60,
+    "wave": 3,
+    "wave_title": "Into the Desert",
+    "verb": "leave",
+    "before": "they could finally wash the sand from their fur and rest their tired feet, and by evening neither of them wanted to",
+    "after": "the cool shade of the rocks.",
+    "correct": "leave",
+    "options": [
+      "leave",
+      "left",
+      "left"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 61,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "be",
+    "before": "By the sixth day, the caravan",
+    "after": "close enough to Qalhara that Zafir could see its walls rising pale gold against the sky. More travelers",
+    "correct": "was",
+    "options": [
+      "was",
+      "were",
+      "been"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 62,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "come",
+    "before": "close enough to Qalhara that Zafir could see its walls rising pale gold against the sky. More travelers",
+    "after": "onto the road with every mile, merchants and pilgrims and musicians all moving toward the same festival, and the road itself",
+    "correct": "came",
+    "options": [
+      "come",
+      "came",
+      "come"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 63,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "become",
+    "before": "onto the road with every mile, merchants and pilgrims and musicians all moving toward the same festival, and the road itself",
+    "after": "busy and loud in a way the desert had never been. Zafir",
+    "correct": "became",
+    "options": [
+      "become",
+      "became",
+      "become"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 64,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "have",
+    "before": "busy and loud in a way the desert had never been. Zafir",
+    "after": "to admit that the noise and color of it all",
+    "correct": "had",
+    "options": [
+      "have",
+      "had",
+      "had"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 65,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "make",
+    "before": "to admit that the noise and color of it all",
+    "after": "his heart race with excitement. \"I",
+    "correct": "made",
+    "options": [
+      "make",
+      "made",
+      "made"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 66,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "think",
+    "before": "his heart race with excitement. \"I",
+    "after": "I have never seen so many people in one place,\" he said to Yara, who",
+    "correct": "think",
+    "options": [
+      "think",
+      "thought",
+      "thought"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 67,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "feel",
+    "before": "I have never seen so many people in one place,\" he said to Yara, who",
+    "after": "exactly the same wonder written across her face. Rafiq",
+    "correct": "felt",
+    "options": [
+      "feel",
+      "felt",
+      "felt"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 68,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "tell",
+    "before": "exactly the same wonder written across her face. Rafiq",
+    "after": "them that the road would join a wide caravan route just outside the city gates, where guards",
+    "correct": "told",
+    "options": [
+      "tell",
+      "told",
+      "told"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 69,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "take",
+    "before": "them that the road would join a wide caravan route just outside the city gates, where guards",
+    "after": "a careful look at everyone entering during festival season. Zafir",
+    "correct": "took",
+    "options": [
+      "take",
+      "took",
+      "taken"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 70,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "find",
+    "before": "a careful look at everyone entering during festival season. Zafir",
+    "after": "the checkpoint fascinating, watching merchants unload silks and spices while camels waited patiently in long lines. He",
+    "correct": "found",
+    "options": [
+      "find",
+      "found",
+      "found"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 71,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "get",
+    "before": "the checkpoint fascinating, watching merchants unload silks and spices while camels waited patiently in long lines. He",
+    "after": "his first close look at a real city gate, tall enough that ten camels could",
+    "correct": "got",
+    "options": [
+      "get",
+      "got",
+      "got"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 72,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "go",
+    "before": "his first close look at a real city gate, tall enough that ten camels could",
+    "after": "through it side by side. For just a moment, in the crowd near the gate, he",
+    "correct": "go",
+    "options": [
+      "go",
+      "went",
+      "gone"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 73,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "see",
+    "before": "through it side by side. For just a moment, in the crowd near the gate, he",
+    "after": "a tall figure in dark robes moving quickly through the noise, though he",
+    "correct": "saw",
+    "options": [
+      "see",
+      "saw",
+      "seen"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 74,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "say",
+    "before": "a tall figure in dark robes moving quickly through the noise, though he",
+    "after": "nothing of it to Yara, unsure why the sight had unsettled him at all. He",
+    "correct": "said",
+    "options": [
+      "say",
+      "said",
+      "said"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 75,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "do",
+    "before": "nothing of it to Yara, unsure why the sight had unsettled him at all. He",
+    "after": "his best to shake off the strange feeling, telling himself it",
+    "correct": "did",
+    "options": [
+      "do",
+      "did",
+      "done"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 76,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "mean",
+    "before": "his best to shake off the strange feeling, telling himself it",
+    "after": "nothing at all in a city this size. Rafiq",
+    "correct": "meant",
+    "options": [
+      "mean",
+      "meant",
+      "meant"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 77,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "give",
+    "before": "nothing at all in a city this size. Rafiq",
+    "after": "both of them a final piece of advice before they reached the gate: \"Stay close to each other, and don't",
+    "correct": "gave",
+    "options": [
+      "give",
+      "gave",
+      "given"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 78,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "leave",
+    "before": "both of them a final piece of advice before they reached the gate: \"Stay close to each other, and don't",
+    "after": "the main roads until you know the city better.\" Zafir",
+    "correct": "leave",
+    "options": [
+      "leave",
+      "left",
+      "left"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 79,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "put",
+    "before": "the main roads until you know the city better.\" Zafir",
+    "after": "the warning carefully in his mind, and he",
+    "correct": "put",
+    "options": [
+      "put",
+      "put",
+      "put"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 80,
+    "wave": 4,
+    "wave_title": "The Long Road",
+    "verb": "know",
+    "before": "the warning carefully in his mind, and he",
+    "after": "already that Qalhara was going to be nothing like the quiet oasis he had left behind.",
+    "correct": "knew",
+    "options": [
+      "know",
+      "knew",
+      "known"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 81,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "be",
+    "before": "At last, Zafir and Yara",
+    "after": "inside the walls of Qalhara, and the city",
+    "correct": "were",
+    "options": [
+      "was",
+      "were",
+      "been"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 82,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "take",
+    "before": "inside the walls of Qalhara, and the city",
+    "after": "his breath away completely. Lanterns of every color glowed above the streets, and the smell of roasting spices and sweet pastries",
+    "correct": "took",
+    "options": [
+      "take",
+      "took",
+      "taken"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 83,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "make",
+    "before": "his breath away completely. Lanterns of every color glowed above the streets, and the smell of roasting spices and sweet pastries",
+    "after": "his stomach growl with hunger. Rafiq",
+    "correct": "made",
+    "options": [
+      "make",
+      "made",
+      "made"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 84,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "say",
+    "before": "his stomach growl with hunger. Rafiq",
+    "after": "goodbye to them near the marketplace, promising to",
+    "correct": "said",
+    "options": [
+      "say",
+      "said",
+      "said"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 85,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "find",
+    "before": "goodbye to them near the marketplace, promising to",
+    "after": "them again before the caravan left the city. Zafir",
+    "correct": "find",
+    "options": [
+      "find",
+      "found",
+      "found"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 86,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "feel",
+    "before": "them again before the caravan left the city. Zafir",
+    "after": "a small pang of nervousness as the trader disappeared into the crowd, but Yara",
+    "correct": "felt",
+    "options": [
+      "feel",
+      "felt",
+      "felt"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 87,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "give",
+    "before": "a small pang of nervousness as the trader disappeared into the crowd, but Yara",
+    "after": "him a reassuring smile and pulled him toward the noise and color ahead. They",
+    "correct": "gave",
+    "options": [
+      "give",
+      "gave",
+      "given"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 88,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "go",
+    "before": "him a reassuring smile and pulled him toward the noise and color ahead. They",
+    "after": "from stall to stall, tasting strange sweets and admiring silk scarves in colors the oasis had never seen. Zafir",
+    "correct": "went",
+    "options": [
+      "go",
+      "went",
+      "gone"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 89,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "think",
+    "before": "from stall to stall, tasting strange sweets and admiring silk scarves in colors the oasis had never seen. Zafir",
+    "after": "he could spend a lifetime here and still not see everything the city had to offer. As evening fell, musicians",
+    "correct": "thought",
+    "options": [
+      "think",
+      "thought",
+      "thought"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 90,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "come",
+    "before": "he could spend a lifetime here and still not see everything the city had to offer. As evening fell, musicians",
+    "after": "out into the squares, and dancers",
+    "correct": "came",
+    "options": [
+      "come",
+      "came",
+      "come"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 91,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "get",
+    "before": "out into the squares, and dancers",
+    "after": "the whole crowd moving together under the lantern light. Zafir",
+    "correct": "got",
+    "options": [
+      "get",
+      "got",
+      "got"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 92,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "know",
+    "before": "the whole crowd moving together under the lantern light. Zafir",
+    "after": "he would remember this night for the rest of his life, however long that turned out to be. Then, just as the first fireworks lit up the sky above the palace, Zafir",
+    "correct": "knew",
+    "options": [
+      "know",
+      "knew",
+      "known"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 93,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "see",
+    "before": "he would remember this night for the rest of his life, however long that turned out to be. Then, just as the first fireworks lit up the sky above the palace, Zafir",
+    "after": "the same tall figure in dark robes again — this time standing perfectly still near the palace steps, watching the crowd instead of joining it. Something about the stillness",
+    "correct": "saw",
+    "options": [
+      "see",
+      "saw",
+      "seen"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 94,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "tell",
+    "before": "the same tall figure in dark robes again — this time standing perfectly still near the palace steps, watching the crowd instead of joining it. Something about the stillness",
+    "after": "him this was not simply a curious traveler. He",
+    "correct": "told",
+    "options": [
+      "tell",
+      "told",
+      "told"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 95,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "do",
+    "before": "him this was not simply a curious traveler. He",
+    "after": "not have time to think about it further, because Yara",
+    "correct": "did",
+    "options": [
+      "do",
+      "did",
+      "done"
+    ],
+    "duplicate_buttons": false
+  },
+  {
+    "id": 96,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "have",
+    "before": "not have time to think about it further, because Yara",
+    "after": "no patience left for waiting and pulled him toward the palace square, eager not to miss the fireworks. Zafir",
+    "correct": "had",
+    "options": [
+      "have",
+      "had",
+      "had"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 97,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "leave",
+    "before": "no patience left for waiting and pulled him toward the palace square, eager not to miss the fireworks. Zafir",
+    "after": "the strange feeling behind for now, telling himself it probably",
+    "correct": "left",
+    "options": [
+      "leave",
+      "left",
+      "left"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 98,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "mean",
+    "before": "the strange feeling behind for now, telling himself it probably",
+    "after": "nothing. But he",
+    "correct": "meant",
+    "options": [
+      "mean",
+      "meant",
+      "meant"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 99,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "put",
+    "before": "nothing. But he",
+    "after": "the memory carefully aside all the same, a small quiet warning he did not yet understand — and somewhere above the noise and light of the festival, Qalhara was only just",
+    "correct": "put",
+    "options": [
+      "put",
+      "put",
+      "put"
+    ],
+    "duplicate_buttons": true
+  },
+  {
+    "id": 100,
+    "wave": 5,
+    "wave_title": "The Gates of Qalhara (cliffhanger)",
+    "verb": "become",
+    "before": "the memory carefully aside all the same, a small quiet warning he did not yet understand — and somewhere above the noise and light of the festival, Qalhara was only just",
+    "after": "the place where his whole story was about to change.",
+    "correct": "becoming",
+    "options": [
+      "become",
+      "became",
+      "becoming"
+    ],
+    "duplicate_buttons": false
+  }
+]
