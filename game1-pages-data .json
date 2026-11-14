@@ -1,0 +1,3174 @@
+[
+ {
+  "page": 1,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-1-oasis-pool.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "At the edge of the great desert there"
+   },
+   {
+    "type": "gap",
+    "id": 1,
+    "verb": "be"
+   },
+   {
+    "type": "text",
+    "value": "a hidden oasis called Zafira's Rest, and a small community known as the Sahar"
+   },
+   {
+    "type": "gap",
+    "id": 2,
+    "verb": "make"
+   },
+   {
+    "type": "text",
+    "value": "their home among the palm trees."
+   }
+  ],
+  "gap_ids": [
+   1,
+   2
+  ],
+  "gaps": {
+   "1": {
+    "correct": "was",
+    "options": [
+     "was",
+     "were",
+     "been"
+    ],
+    "explanations": {
+     "were": "Were is for plural subjects, and the subject here is singular.",
+     "been": "Been needs 'has' or 'had' before it."
+    },
+    "label": "Was is the past simple of 'be'."
+   },
+   "2": {
+    "correct": "made",
+    "options": [
+     "make",
+     "made",
+     "made"
+    ],
+    "explanations": {
+     "make": "Make is the present form. This part of the story is in the past."
+    },
+    "label": "Made is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 2,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-1-oasis-pool.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Every member of the Sahar"
+   },
+   {
+    "type": "gap",
+    "id": 3,
+    "verb": "know"
+   },
+   {
+    "type": "text",
+    "value": "the oasis well, and Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 4,
+    "verb": "have"
+   },
+   {
+    "type": "text",
+    "value": "a favourite spot beside the water."
+   }
+  ],
+  "gap_ids": [
+   3,
+   4
+  ],
+  "gaps": {
+   "3": {
+    "correct": "knew",
+    "options": [
+     "know",
+     "knew",
+     "known"
+    ],
+    "explanations": {
+     "know": "Know is the present form. This part of the story is in the past.",
+     "known": "Known is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Knew is the past simple."
+   },
+   "4": {
+    "correct": "had",
+    "options": [
+     "have",
+     "had",
+     "had"
+    ],
+    "explanations": {
+     "have": "Have is the present form. This part of the story is in the past."
+    },
+    "label": "Had is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 3,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-1-oasis-pool.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Each morning he"
+   },
+   {
+    "type": "gap",
+    "id": 5,
+    "verb": "go"
+   },
+   {
+    "type": "text",
+    "value": "swimming with his friends. Afterwards he"
+   },
+   {
+    "type": "gap",
+    "id": 6,
+    "verb": "feel"
+   },
+   {
+    "type": "text",
+    "value": "happy to nap in the shade until the sun got too hot."
+   }
+  ],
+  "gap_ids": [
+   5,
+   6
+  ],
+  "gaps": {
+   "5": {
+    "correct": "went",
+    "options": [
+     "go",
+     "went",
+     "gone"
+    ],
+    "explanations": {
+     "go": "Go is the present form. This part of the story is in the past.",
+     "gone": "Gone is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Went is the past simple."
+   },
+   "6": {
+    "correct": "felt",
+    "options": [
+     "feel",
+     "felt",
+     "felt"
+    ],
+    "explanations": {
+     "feel": "Feel is the present form. This part of the story is in the past."
+    },
+    "label": "Felt is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 4,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 7,
+    "verb": "think"
+   },
+   {
+    "type": "text",
+    "value": "his days would always be the same, until one afternoon a group of desert traders"
+   },
+   {
+    "type": "gap",
+    "id": 8,
+    "verb": "come"
+   },
+   {
+    "type": "text",
+    "value": "through the oasis to rest and water their camels."
+   }
+  ],
+  "gap_ids": [
+   7,
+   8
+  ],
+  "gaps": {
+   "7": {
+    "correct": "thought",
+    "options": [
+     "think",
+     "thought",
+     "thought"
+    ],
+    "explanations": {
+     "think": "Think is the present form. This part of the story is in the past."
+    },
+    "label": "Thought is the past simple and the past participle."
+   },
+   "8": {
+    "correct": "came",
+    "options": [
+     "come",
+     "came",
+     "come"
+    ],
+    "explanations": {
+     "come": "Come is the present form. This part of the story is in the past."
+    },
+    "label": "Came is the past simple."
+   }
+  }
+ },
+ {
+  "page": 5,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 9,
+    "verb": "see"
+   },
+   {
+    "type": "text",
+    "value": "them first, coming across the dunes. While they drank from the oasis, he listened, fascinated, to their stories."
+   }
+  ],
+  "gap_ids": [
+   9
+  ],
+  "gaps": {
+   "9": {
+    "correct": "saw",
+    "options": [
+     "see",
+     "saw",
+     "seen"
+    ],
+    "explanations": {
+     "see": "See is the present form. This part of the story is in the past.",
+     "seen": "Seen is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Saw is the past simple."
+   }
+  }
+ },
+ {
+  "page": 6,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"We"
+   },
+   {
+    "type": "gap",
+    "id": 10,
+    "verb": "leave"
+   },
+   {
+    "type": "text",
+    "value": "the city of Marazan three days ago,\" the trader"
+   },
+   {
+    "type": "gap",
+    "id": 11,
+    "verb": "say"
+   },
+   {
+    "type": "text",
+    "value": ", wiping the dust from his face, \"and tomorrow we travel on to Qalhara, where the whole city is getting ready for the Festival of Lights.\""
+   }
+  ],
+  "gap_ids": [
+   10,
+   11
+  ],
+  "gaps": {
+   "10": {
+    "correct": "left",
+    "options": [
+     "leave",
+     "left",
+     "left"
+    ],
+    "explanations": {
+     "leave": "Leave is the present form. This part of the story is in the past."
+    },
+    "label": "Left is the past simple and the past participle."
+   },
+   "11": {
+    "correct": "said",
+    "options": [
+     "say",
+     "said",
+     "said"
+    ],
+    "explanations": {
+     "say": "Say is the present form. This part of the story is in the past."
+    },
+    "label": "Said is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 7,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "The trader"
+   },
+   {
+    "type": "gap",
+    "id": 12,
+    "verb": "tell"
+   },
+   {
+    "type": "text",
+    "value": "stories of lanterns lighting up the city and a marketplace so large a person could"
+   },
+   {
+    "type": "gap",
+    "id": 13,
+    "verb": "get"
+   },
+   {
+    "type": "text",
+    "value": "lost in it for days, and Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 14,
+    "verb": "find"
+   },
+   {
+    "type": "text",
+    "value": "it hard to stop asking questions, hungry for every detail."
+   }
+  ],
+  "gap_ids": [
+   12,
+   13,
+   14
+  ],
+  "gaps": {
+   "12": {
+    "correct": "told",
+    "options": [
+     "tell",
+     "told",
+     "told"
+    ],
+    "explanations": {
+     "tell": "Tell is the present form. This part of the story is in the past."
+    },
+    "label": "Told is the past simple and the past participle."
+   },
+   "13": {
+    "correct": "get",
+    "options": [
+     "get",
+     "got",
+     "got"
+    ],
+    "explanations": {
+     "got": "After 'could', use the base form."
+    },
+    "label": "Get is the base form."
+   },
+   "14": {
+    "correct": "found",
+    "options": [
+     "find",
+     "found",
+     "found"
+    ],
+    "explanations": {
+     "find": "Find is the present form. This part of the story is in the past."
+    },
+    "label": "Found is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 8,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"You"
+   },
+   {
+    "type": "gap",
+    "id": 15,
+    "verb": "mean"
+   },
+   {
+    "type": "text",
+    "value": "the whole city lights up at once?\" he asked, wide-eyed, and the trader"
+   },
+   {
+    "type": "gap",
+    "id": 16,
+    "verb": "give"
+   },
+   {
+    "type": "text",
+    "value": "a small nod, amused by his excitement."
+   }
+  ],
+  "gap_ids": [
+   15,
+   16
+  ],
+  "gaps": {
+   "15": {
+    "correct": "mean",
+    "options": [
+     "mean",
+     "meant",
+     "meant"
+    ],
+    "explanations": {
+     "meant": "Meant is a past form, but the speaker is talking about now."
+    },
+    "label": "Mean is the base form, used for the present."
+   },
+   "16": {
+    "correct": "gave",
+    "options": [
+     "give",
+     "gave",
+     "given"
+    ],
+    "explanations": {
+     "give": "Give is the present form. This part of the story is in the past.",
+     "given": "Given is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Gave is the past simple."
+   }
+  }
+ },
+ {
+  "page": 9,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "That night he"
+   },
+   {
+    "type": "gap",
+    "id": 17,
+    "verb": "do"
+   },
+   {
+    "type": "text",
+    "value": "something he had almost never"
+   },
+   {
+    "type": "gap",
+    "id": 18,
+    "verb": "do"
+   },
+   {
+    "type": "text",
+    "value": ": he lay awake, staring at the stars, letting his mind wander far past the oasis."
+   }
+  ],
+  "gap_ids": [
+   17,
+   18
+  ],
+  "gaps": {
+   "17": {
+    "correct": "did",
+    "options": [
+     "do",
+     "did",
+     "done"
+    ],
+    "explanations": {
+     "do": "Do is the present form. This part of the story is in the past.",
+     "done": "Done is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Did is the past simple."
+   },
+   "18": {
+    "correct": "done",
+    "options": [
+     "do",
+     "did",
+     "done"
+    ],
+    "explanations": {
+     "do": "After 'had', the base form does not fit. Use the past participle.",
+     "did": "Did is the simple past. After 'had', use the past participle."
+    },
+    "label": "Done is the past participle."
+   }
+  }
+ },
+ {
+  "page": 10,
+  "wave": 1,
+  "wave_title": "The Oasis of Sahar",
+  "scene": "scene-2-travelers-arrive.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 19,
+    "verb": "say"
+   },
+   {
+    "type": "text",
+    "value": "nothing the next morning, but the thought of the festival stayed with him. By evening he had"
+   },
+   {
+    "type": "gap",
+    "id": 20,
+    "verb": "make"
+   },
+   {
+    "type": "text",
+    "value": "up his mind."
+   }
+  ],
+  "gap_ids": [
+   19,
+   20
+  ],
+  "gaps": {
+   "19": {
+    "correct": "said",
+    "options": [
+     "say",
+     "said",
+     "said"
+    ],
+    "explanations": {
+     "say": "Say is the present form. This part of the story is in the past."
+    },
+    "label": "Said is the past simple and the past participle."
+   },
+   "20": {
+    "correct": "made",
+    "options": [
+     "make",
+     "made",
+     "made"
+    ],
+    "explanations": {
+     "make": "After 'had', the base form does not fit. Use the past participle."
+    },
+    "label": "Made is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 11,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-3-elders-permission.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "The next morning, Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 21,
+    "verb": "go"
+   },
+   {
+    "type": "text",
+    "value": "straight to the oasis elders and told them he wanted to travel to Qalhara with the traders."
+   }
+  ],
+  "gap_ids": [
+   21
+  ],
+  "gaps": {
+   "21": {
+    "correct": "went",
+    "options": [
+     "go",
+     "went",
+     "gone"
+    ],
+    "explanations": {
+     "go": "Go is the present form. This part of the story is in the past.",
+     "gone": "Gone is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Went is the past simple."
+   }
+  }
+ },
+ {
+  "page": 12,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-3-elders-permission.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"You"
+   },
+   {
+    "type": "gap",
+    "id": 22,
+    "verb": "know"
+   },
+   {
+    "type": "text",
+    "value": "the desert can be dangerous for someone who has never left the oasis,\" the elder warned. \"It"
+   },
+   {
+    "type": "gap",
+    "id": 23,
+    "verb": "be"
+   },
+   {
+    "type": "text",
+    "value": "a long way to Qalhara.\""
+   }
+  ],
+  "gap_ids": [
+   22,
+   23
+  ],
+  "gaps": {
+   "22": {
+    "correct": "know",
+    "options": [
+     "know",
+     "knew",
+     "known"
+    ],
+    "explanations": {
+     "knew": "Knew is a past form, but the speaker is talking about now.",
+     "known": "Known is a past participle, but the speaker is talking about now."
+    },
+    "label": "Know is the base form, used for the present."
+   },
+   "23": {
+    "correct": "is",
+    "options": [
+     "is",
+     "was",
+     "been"
+    ],
+    "explanations": {
+     "was": "Was is a past form, but the speaker is talking about now.",
+     "been": "Been needs 'has' or 'had' before it."
+    },
+    "label": "Is is the present of 'be'."
+   }
+  }
+ },
+ {
+  "page": 13,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-3-elders-permission.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"I understand the risks,\" he"
+   },
+   {
+    "type": "gap",
+    "id": 24,
+    "verb": "say"
+   },
+   {
+    "type": "text",
+    "value": ", \"but I"
+   },
+   {
+    "type": "gap",
+    "id": 25,
+    "verb": "feel"
+   },
+   {
+    "type": "text",
+    "value": "sure this is something I need to do for myself.\""
+   }
+  ],
+  "gap_ids": [
+   24,
+   25
+  ],
+  "gaps": {
+   "24": {
+    "correct": "said",
+    "options": [
+     "say",
+     "said",
+     "said"
+    ],
+    "explanations": {
+     "say": "Say is the present form. This part of the story is in the past."
+    },
+    "label": "Said is the past simple and the past participle."
+   },
+   "25": {
+    "correct": "feel",
+    "options": [
+     "feel",
+     "felt",
+     "felt"
+    ],
+    "explanations": {
+     "felt": "Felt is a past form, but the speaker is talking about now."
+    },
+    "label": "Feel is the base form, used for the present."
+   }
+  }
+ },
+ {
+  "page": 14,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-4-farewell-gathering.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "His friend Yara, another young member of the Sahar, decided she wanted to come too, and together they"
+   },
+   {
+    "type": "gap",
+    "id": 26,
+    "verb": "make"
+   },
+   {
+    "type": "text",
+    "value": "a simple plan: they would leave with the traders at first light."
+   }
+  ],
+  "gap_ids": [
+   26
+  ],
+  "gaps": {
+   "26": {
+    "correct": "made",
+    "options": [
+     "make",
+     "made",
+     "made"
+    ],
+    "explanations": {
+     "make": "Make is the present form. This part of the story is in the past."
+    },
+    "label": "Made is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 15,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-4-farewell-gathering.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 27,
+    "verb": "have"
+   },
+   {
+    "type": "text",
+    "value": "very little to pack, only a small woven bag and a smooth blue stone from his favourite pool, which he wanted to"
+   },
+   {
+    "type": "gap",
+    "id": 28,
+    "verb": "give"
+   },
+   {
+    "type": "text",
+    "value": "to the elder as a promise that he would return."
+   }
+  ],
+  "gap_ids": [
+   27,
+   28
+  ],
+  "gaps": {
+   "27": {
+    "correct": "had",
+    "options": [
+     "have",
+     "had",
+     "had"
+    ],
+    "explanations": {
+     "have": "Have is the present form. This part of the story is in the past."
+    },
+    "label": "Had is the past simple and the past participle."
+   },
+   "28": {
+    "correct": "give",
+    "options": [
+     "give",
+     "gave",
+     "given"
+    ],
+    "explanations": {
+     "gave": "After 'to', use the base form.",
+     "given": "After 'to', use the base form."
+    },
+    "label": "Give is the base form."
+   }
+  }
+ },
+ {
+  "page": 16,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-4-farewell-gathering.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"I"
+   },
+   {
+    "type": "gap",
+    "id": 29,
+    "verb": "think"
+   },
+   {
+    "type": "text",
+    "value": "you are both very brave, or perhaps very foolish,\" the elder said with a small smile, \"but I will not stop you.\""
+   }
+  ],
+  "gap_ids": [
+   29
+  ],
+  "gaps": {
+   "29": {
+    "correct": "think",
+    "options": [
+     "think",
+     "thought",
+     "thought"
+    ],
+    "explanations": {
+     "thought": "Thought is a past form, but the speaker is talking about now."
+    },
+    "label": "Think is the base form, used for the present."
+   }
+  }
+ },
+ {
+  "page": 17,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-4-farewell-gathering.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 30,
+    "verb": "find"
+   },
+   {
+    "type": "text",
+    "value": "it hard to look away from the oasis as they packed their things, and for a moment he almost"
+   },
+   {
+    "type": "gap",
+    "id": 31,
+    "verb": "leave"
+   },
+   {
+    "type": "text",
+    "value": "the blue stone behind out of nerves."
+   }
+  ],
+  "gap_ids": [
+   30,
+   31
+  ],
+  "gaps": {
+   "30": {
+    "correct": "found",
+    "options": [
+     "find",
+     "found",
+     "found"
+    ],
+    "explanations": {
+     "find": "Find is the present form. This part of the story is in the past."
+    },
+    "label": "Found is the past simple and the past participle."
+   },
+   "31": {
+    "correct": "left",
+    "options": [
+     "leave",
+     "left",
+     "left"
+    ],
+    "explanations": {
+     "leave": "Leave is the present form. This part of the story is in the past."
+    },
+    "label": "Left is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 18,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-4-farewell-gathering.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "That evening, the whole community"
+   },
+   {
+    "type": "gap",
+    "id": 32,
+    "verb": "come"
+   },
+   {
+    "type": "text",
+    "value": "together for a small farewell gathering, and everyone gathered to"
+   },
+   {
+    "type": "gap",
+    "id": 33,
+    "verb": "tell"
+   },
+   {
+    "type": "text",
+    "value": "Zafir and Yara to be careful and to come home safely."
+   }
+  ],
+  "gap_ids": [
+   32,
+   33
+  ],
+  "gaps": {
+   "32": {
+    "correct": "came",
+    "options": [
+     "come",
+     "came",
+     "come"
+    ],
+    "explanations": {
+     "come": "Come is the present form. This part of the story is in the past."
+    },
+    "label": "Came is the past simple."
+   },
+   "33": {
+    "correct": "tell",
+    "options": [
+     "tell",
+     "told",
+     "told"
+    ],
+    "explanations": {
+     "told": "After 'to', use the base form."
+    },
+    "label": "Tell is the base form."
+   }
+  }
+ },
+ {
+  "page": 19,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-5-dawn-departure.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "As they said their goodbyes, Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 34,
+    "verb": "see"
+   },
+   {
+    "type": "text",
+    "value": "tears in Yara's mother's eyes, though she smiled and told them to enjoy every moment of the journey."
+   }
+  ],
+  "gap_ids": [
+   34
+  ],
+  "gaps": {
+   "34": {
+    "correct": "saw",
+    "options": [
+     "see",
+     "saw",
+     "seen"
+    ],
+    "explanations": {
+     "see": "See is the present form. This part of the story is in the past.",
+     "seen": "Seen is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Saw is the past simple."
+   }
+  }
+ },
+ {
+  "page": 20,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-5-dawn-departure.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 35,
+    "verb": "take"
+   },
+   {
+    "type": "text",
+    "value": "one last long look at the glowing pool before the sun disappeared behind the dunes."
+   }
+  ],
+  "gap_ids": [
+   35
+  ],
+  "gaps": {
+   "35": {
+    "correct": "took",
+    "options": [
+     "take",
+     "took",
+     "taken"
+    ],
+    "explanations": {
+     "take": "Take is the present form. This part of the story is in the past.",
+     "taken": "Taken is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Took is the past simple."
+   }
+  }
+ },
+ {
+  "page": 21,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-5-dawn-departure.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Early the next morning, before the traders"
+   },
+   {
+    "type": "gap",
+    "id": 36,
+    "verb": "get"
+   },
+   {
+    "type": "text",
+    "value": "their camels ready, Zafir and Yara"
+   },
+   {
+    "type": "gap",
+    "id": 37,
+    "verb": "put"
+   },
+   {
+    "type": "text",
+    "value": "their small bags onto one of the spare camels and climbed up beside them."
+   }
+  ],
+  "gap_ids": [
+   36,
+   37
+  ],
+  "gaps": {
+   "36": {
+    "correct": "got",
+    "options": [
+     "get",
+     "got",
+     "got"
+    ],
+    "explanations": {
+     "get": "Get is the present form. This part of the story is in the past."
+    },
+    "label": "Got is the past simple and the past participle."
+   },
+   "37": {
+    "correct": "put",
+    "options": [
+     "put",
+     "put",
+     "put"
+    ],
+    "explanations": {},
+    "label": "Put is the same in all three forms."
+   }
+  }
+ },
+ {
+  "page": 22,
+  "wave": 2,
+  "wave_title": "The Long Goodbye",
+  "scene": "scene-5-dawn-departure.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir did not quite know what leaving the oasis would"
+   },
+   {
+    "type": "gap",
+    "id": 38,
+    "verb": "mean"
+   },
+   {
+    "type": "text",
+    "value": "for him, only that he was ready to"
+   },
+   {
+    "type": "gap",
+    "id": 39,
+    "verb": "do"
+   },
+   {
+    "type": "text",
+    "value": "it, whatever came next, and as the oasis grew smaller behind them, something in him quietly began to"
+   },
+   {
+    "type": "gap",
+    "id": 40,
+    "verb": "become"
+   },
+   {
+    "type": "text",
+    "value": "a little more sure of himself with every step."
+   }
+  ],
+  "gap_ids": [
+   38,
+   39,
+   40
+  ],
+  "gaps": {
+   "38": {
+    "correct": "mean",
+    "options": [
+     "mean",
+     "meant",
+     "meant"
+    ],
+    "explanations": {
+     "meant": "After 'would', use the base form."
+    },
+    "label": "Mean is the base form."
+   },
+   "39": {
+    "correct": "do",
+    "options": [
+     "do",
+     "did",
+     "done"
+    ],
+    "explanations": {
+     "did": "After 'to', use the base form.",
+     "done": "After 'to', use the base form."
+    },
+    "label": "Do is the base form."
+   },
+   "40": {
+    "correct": "become",
+    "options": [
+     "become",
+     "became",
+     "become"
+    ],
+    "explanations": {
+     "became": "After 'to', use the base form."
+    },
+    "label": "Become is the base form and the past participle."
+   }
+  }
+ },
+ {
+  "page": 23,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-6-night-desert-camp.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "For three days, Zafir and Yara"
+   },
+   {
+    "type": "gap",
+    "id": 41,
+    "verb": "be"
+   },
+   {
+    "type": "text",
+    "value": "part of the traders' caravan, learning the slow rhythm of desert travel: walk before dawn, rest through the worst heat, and walk again as the sky cooled toward evening."
+   }
+  ],
+  "gap_ids": [
+   41
+  ],
+  "gaps": {
+   "41": {
+    "correct": "were",
+    "options": [
+     "was",
+     "were",
+     "been"
+    ],
+    "explanations": {
+     "was": "Was is for singular subjects, and the subject here is plural.",
+     "been": "Been needs 'has' or 'had' before it."
+    },
+    "label": "Were is the past simple of 'be'."
+   }
+  }
+ },
+ {
+  "page": 24,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-6-night-desert-camp.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 42,
+    "verb": "have"
+   },
+   {
+    "type": "text",
+    "value": "never seen so much empty sand in his life, and at first the endless dunes"
+   },
+   {
+    "type": "gap",
+    "id": 43,
+    "verb": "make"
+   },
+   {
+    "type": "text",
+    "value": "him a little dizzy."
+   }
+  ],
+  "gap_ids": [
+   42,
+   43
+  ],
+  "gaps": {
+   "42": {
+    "correct": "had",
+    "options": [
+     "have",
+     "had",
+     "had"
+    ],
+    "explanations": {
+     "have": "Have is the present form. This part of the story is in the past."
+    },
+    "label": "Had is the past simple and the past participle."
+   },
+   "43": {
+    "correct": "made",
+    "options": [
+     "make",
+     "made",
+     "made"
+    ],
+    "explanations": {
+     "make": "Make is the present form. This part of the story is in the past."
+    },
+    "label": "Made is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 25,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-6-night-desert-camp.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 44,
+    "verb": "think"
+   },
+   {
+    "type": "text",
+    "value": "the desert would feel lonely, but instead he"
+   },
+   {
+    "type": "gap",
+    "id": 45,
+    "verb": "find"
+   },
+   {
+    "type": "text",
+    "value": "something oddly peaceful in its silence, broken only by the soft steps of the camels."
+   }
+  ],
+  "gap_ids": [
+   44,
+   45
+  ],
+  "gaps": {
+   "44": {
+    "correct": "thought",
+    "options": [
+     "think",
+     "thought",
+     "thought"
+    ],
+    "explanations": {
+     "think": "Think is the present form. This part of the story is in the past."
+    },
+    "label": "Thought is the past simple and the past participle."
+   },
+   "45": {
+    "correct": "found",
+    "options": [
+     "find",
+     "found",
+     "found"
+    ],
+    "explanations": {
+     "find": "Find is the present form. This part of the story is in the past."
+    },
+    "label": "Found is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 26,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-6-night-desert-camp.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "One of the traders, an older man named Rafiq,"
+   },
+   {
+    "type": "gap",
+    "id": 46,
+    "verb": "tell"
+   },
+   {
+    "type": "text",
+    "value": "Zafir stories about the stars each night, showing him how a traveller can always"
+   },
+   {
+    "type": "gap",
+    "id": 47,
+    "verb": "know"
+   },
+   {
+    "type": "text",
+    "value": "which way is north just by looking up."
+   }
+  ],
+  "gap_ids": [
+   46,
+   47
+  ],
+  "gaps": {
+   "46": {
+    "correct": "told",
+    "options": [
+     "tell",
+     "told",
+     "told"
+    ],
+    "explanations": {
+     "tell": "Tell is the present form. This part of the story is in the past."
+    },
+    "label": "Told is the past simple and the past participle."
+   },
+   "47": {
+    "correct": "know",
+    "options": [
+     "know",
+     "knew",
+     "known"
+    ],
+    "explanations": {
+     "knew": "After 'can', use the base form.",
+     "known": "After 'can', use the base form."
+    },
+    "label": "Know is the base form."
+   }
+  }
+ },
+ {
+  "page": 27,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-7-storm-on-horizon.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "On the fourth afternoon, the wind"
+   },
+   {
+    "type": "gap",
+    "id": 48,
+    "verb": "get"
+   },
+   {
+    "type": "text",
+    "value": "stronger without warning, and within minutes the whole caravan"
+   },
+   {
+    "type": "gap",
+    "id": 49,
+    "verb": "see"
+   },
+   {
+    "type": "text",
+    "value": "a wall of sand rising on the horizon."
+   }
+  ],
+  "gap_ids": [
+   48,
+   49
+  ],
+  "gaps": {
+   "48": {
+    "correct": "got",
+    "options": [
+     "get",
+     "got",
+     "got"
+    ],
+    "explanations": {
+     "get": "Get is the present form. This part of the story is in the past."
+    },
+    "label": "Got is the past simple and the past participle."
+   },
+   "49": {
+    "correct": "saw",
+    "options": [
+     "see",
+     "saw",
+     "seen"
+    ],
+    "explanations": {
+     "see": "See is the present form. This part of the story is in the past.",
+     "seen": "Seen is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Saw is the past simple."
+   }
+  }
+ },
+ {
+  "page": 28,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-7-storm-on-horizon.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Rafiq shouted a warning as a storm"
+   },
+   {
+    "type": "gap",
+    "id": 50,
+    "verb": "come"
+   },
+   {
+    "type": "text",
+    "value": "rushing toward them across the dunes, and everyone"
+   },
+   {
+    "type": "gap",
+    "id": 51,
+    "verb": "go"
+   },
+   {
+    "type": "text",
+    "value": "quickly to shelter the camels and cover their faces with cloth."
+   }
+  ],
+  "gap_ids": [
+   50,
+   51
+  ],
+  "gaps": {
+   "50": {
+    "correct": "came",
+    "options": [
+     "come",
+     "came",
+     "come"
+    ],
+    "explanations": {
+     "come": "Come is the present form. This part of the story is in the past."
+    },
+    "label": "Came is the past simple."
+   },
+   "51": {
+    "correct": "went",
+    "options": [
+     "go",
+     "went",
+     "gone"
+    ],
+    "explanations": {
+     "go": "Go is the present form. This part of the story is in the past.",
+     "gone": "Gone is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Went is the past simple."
+   }
+  }
+ },
+ {
+  "page": 29,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-7-storm-on-horizon.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 52,
+    "verb": "take"
+   },
+   {
+    "type": "text",
+    "value": "Yara's hand and pulled her close as the sand"
+   },
+   {
+    "type": "gap",
+    "id": 53,
+    "verb": "become"
+   },
+   {
+    "type": "text",
+    "value": "a stinging, howling blur around them, and for a long, frightening stretch of time, no one could"
+   },
+   {
+    "type": "gap",
+    "id": 54,
+    "verb": "say"
+   },
+   {
+    "type": "text",
+    "value": "a single word over the roar of the wind."
+   }
+  ],
+  "gap_ids": [
+   52,
+   53,
+   54
+  ],
+  "gaps": {
+   "52": {
+    "correct": "took",
+    "options": [
+     "take",
+     "took",
+     "taken"
+    ],
+    "explanations": {
+     "take": "Take is the present form. This part of the story is in the past.",
+     "taken": "Taken is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Took is the past simple."
+   },
+   "53": {
+    "correct": "became",
+    "options": [
+     "become",
+     "became",
+     "become"
+    ],
+    "explanations": {
+     "become": "Become is the present form. This part of the story is in the past."
+    },
+    "label": "Became is the past simple."
+   },
+   "54": {
+    "correct": "say",
+    "options": [
+     "say",
+     "said",
+     "said"
+    ],
+    "explanations": {
+     "said": "After 'could', use the base form."
+    },
+    "label": "Say is the base form."
+   }
+  }
+ },
+ {
+  "page": 30,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-7-storm-on-horizon.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "When the storm finally passed, Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 55,
+    "verb": "give"
+   },
+   {
+    "type": "text",
+    "value": "a shaky laugh of relief, and Rafiq"
+   },
+   {
+    "type": "gap",
+    "id": 56,
+    "verb": "put"
+   },
+   {
+    "type": "text",
+    "value": "a steady hand on his shoulder."
+   }
+  ],
+  "gap_ids": [
+   55,
+   56
+  ],
+  "gaps": {
+   "55": {
+    "correct": "gave",
+    "options": [
+     "give",
+     "gave",
+     "given"
+    ],
+    "explanations": {
+     "give": "Give is the present form. This part of the story is in the past.",
+     "given": "Given is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Gave is the past simple."
+   },
+   "56": {
+    "correct": "put",
+    "options": [
+     "put",
+     "put",
+     "put"
+    ],
+    "explanations": {},
+    "label": "Put is the same in all three forms."
+   }
+  }
+ },
+ {
+  "page": 31,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-7-storm-on-horizon.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"You"
+   },
+   {
+    "type": "gap",
+    "id": 57,
+    "verb": "do"
+   },
+   {
+    "type": "text",
+    "value": "well for someone who has never seen a sandstorm before,\" he said warmly."
+   }
+  ],
+  "gap_ids": [
+   57
+  ],
+  "gaps": {
+   "57": {
+    "correct": "did",
+    "options": [
+     "do",
+     "did",
+     "done"
+    ],
+    "explanations": {
+     "do": "Do is the present form. This part of the story is in the past.",
+     "done": "Done is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Did is the past simple."
+   }
+  }
+ },
+ {
+  "page": 32,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-8-canyon-oasis.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"I"
+   },
+   {
+    "type": "gap",
+    "id": 58,
+    "verb": "feel"
+   },
+   {
+    "type": "text",
+    "value": "such relief,\" Zafir said, laughing, the moment he saw the green plants and clear water after so much empty sand, and for the first time since the storm he let himself relax completely."
+   }
+  ],
+  "gap_ids": [
+   58
+  ],
+  "gaps": {
+   "58": {
+    "correct": "feel",
+    "options": [
+     "feel",
+     "felt",
+     "felt"
+    ],
+    "explanations": {
+     "felt": "Felt is a past form, but the speaker is talking about now."
+    },
+    "label": "Feel is the base form, used for the present."
+   }
+  }
+ },
+ {
+  "page": 33,
+  "wave": 3,
+  "wave_title": "Into the Desert",
+  "scene": "scene-8-canyon-oasis.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Yara said the canyon"
+   },
+   {
+    "type": "gap",
+    "id": 59,
+    "verb": "mean"
+   },
+   {
+    "type": "text",
+    "value": "they could finally wash the sand from their fur and rest their tired feet, and by evening neither of them wanted to"
+   },
+   {
+    "type": "gap",
+    "id": 60,
+    "verb": "leave"
+   },
+   {
+    "type": "text",
+    "value": "the cool shade of the rocks."
+   }
+  ],
+  "gap_ids": [
+   59,
+   60
+  ],
+  "gaps": {
+   "59": {
+    "correct": "meant",
+    "options": [
+     "mean",
+     "meant",
+     "meant"
+    ],
+    "explanations": {
+     "mean": "Mean is the present form. This part of the story is in the past."
+    },
+    "label": "Meant is the past simple and the past participle."
+   },
+   "60": {
+    "correct": "leave",
+    "options": [
+     "leave",
+     "left",
+     "left"
+    ],
+    "explanations": {
+     "left": "After 'to', use the base form."
+    },
+    "label": "Leave is the base form."
+   }
+  }
+ },
+ {
+  "page": 34,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "By the sixth day, the caravan"
+   },
+   {
+    "type": "gap",
+    "id": 61,
+    "verb": "be"
+   },
+   {
+    "type": "text",
+    "value": "close enough to Qalhara that Zafir could see its walls rising pale gold against the sky."
+   }
+  ],
+  "gap_ids": [
+   61
+  ],
+  "gaps": {
+   "61": {
+    "correct": "was",
+    "options": [
+     "was",
+     "were",
+     "been"
+    ],
+    "explanations": {
+     "were": "Were is for plural subjects, and the subject here is singular.",
+     "been": "Been needs 'has' or 'had' before it."
+    },
+    "label": "Was is the past simple of 'be'."
+   }
+  }
+ },
+ {
+  "page": 35,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "More travellers"
+   },
+   {
+    "type": "gap",
+    "id": 62,
+    "verb": "come"
+   },
+   {
+    "type": "text",
+    "value": "onto the road with every mile, merchants and pilgrims and musicians all moving toward the same festival, and the road itself"
+   },
+   {
+    "type": "gap",
+    "id": 63,
+    "verb": "become"
+   },
+   {
+    "type": "text",
+    "value": "busy and loud in a way the desert had never been."
+   }
+  ],
+  "gap_ids": [
+   62,
+   63
+  ],
+  "gaps": {
+   "62": {
+    "correct": "came",
+    "options": [
+     "come",
+     "came",
+     "come"
+    ],
+    "explanations": {
+     "come": "Come is the present form. This part of the story is in the past."
+    },
+    "label": "Came is the past simple."
+   },
+   "63": {
+    "correct": "became",
+    "options": [
+     "become",
+     "became",
+     "become"
+    ],
+    "explanations": {
+     "become": "Become is the present form. This part of the story is in the past."
+    },
+    "label": "Became is the past simple."
+   }
+  }
+ },
+ {
+  "page": 36,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 64,
+    "verb": "have"
+   },
+   {
+    "type": "text",
+    "value": "to admit that the noise and colour of it all"
+   },
+   {
+    "type": "gap",
+    "id": 65,
+    "verb": "make"
+   },
+   {
+    "type": "text",
+    "value": "his heart race with excitement."
+   }
+  ],
+  "gap_ids": [
+   64,
+   65
+  ],
+  "gaps": {
+   "64": {
+    "correct": "had",
+    "options": [
+     "have",
+     "had",
+     "had"
+    ],
+    "explanations": {
+     "have": "Have is the present form. This part of the story is in the past."
+    },
+    "label": "Had is the past simple and the past participle."
+   },
+   "65": {
+    "correct": "made",
+    "options": [
+     "make",
+     "made",
+     "made"
+    ],
+    "explanations": {
+     "make": "Make is the present form. This part of the story is in the past."
+    },
+    "label": "Made is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 37,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"I"
+   },
+   {
+    "type": "gap",
+    "id": 66,
+    "verb": "think"
+   },
+   {
+    "type": "text",
+    "value": "I have never seen so many people in one place,\" he said to Yara."
+   }
+  ],
+  "gap_ids": [
+   66
+  ],
+  "gaps": {
+   "66": {
+    "correct": "think",
+    "options": [
+     "think",
+     "thought",
+     "thought"
+    ],
+    "explanations": {
+     "thought": "Thought is a past form, but the speaker is talking about now."
+    },
+    "label": "Think is the base form, used for the present."
+   }
+  }
+ },
+ {
+  "page": 38,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "\"I"
+   },
+   {
+    "type": "gap",
+    "id": 67,
+    "verb": "feel"
+   },
+   {
+    "type": "text",
+    "value": "exactly the same,\" she said, wonder written across her face."
+   }
+  ],
+  "gap_ids": [
+   67
+  ],
+  "gaps": {
+   "67": {
+    "correct": "feel",
+    "options": [
+     "feel",
+     "felt",
+     "felt"
+    ],
+    "explanations": {
+     "felt": "Felt is a past form, but the speaker is talking about now."
+    },
+    "label": "Feel is the base form, used for the present."
+   }
+  }
+ },
+ {
+  "page": 39,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Rafiq"
+   },
+   {
+    "type": "gap",
+    "id": 68,
+    "verb": "tell"
+   },
+   {
+    "type": "text",
+    "value": "them that the road would join a wide caravan route just outside the city gates, where guards"
+   },
+   {
+    "type": "gap",
+    "id": 69,
+    "verb": "take"
+   },
+   {
+    "type": "text",
+    "value": "a careful look at everyone entering during festival season."
+   }
+  ],
+  "gap_ids": [
+   68,
+   69
+  ],
+  "gaps": {
+   "68": {
+    "correct": "told",
+    "options": [
+     "tell",
+     "told",
+     "told"
+    ],
+    "explanations": {
+     "tell": "Tell is the present form. This part of the story is in the past."
+    },
+    "label": "Told is the past simple and the past participle."
+   },
+   "69": {
+    "correct": "took",
+    "options": [
+     "take",
+     "took",
+     "taken"
+    ],
+    "explanations": {
+     "take": "Take is the present form. This part of the story is in the past.",
+     "taken": "Taken is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Took is the past simple."
+   }
+  }
+ },
+ {
+  "page": 40,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 70,
+    "verb": "find"
+   },
+   {
+    "type": "text",
+    "value": "the checkpoint fascinating, watching merchants unload silks and spices while camels waited patiently in long lines."
+   }
+  ],
+  "gap_ids": [
+   70
+  ],
+  "gaps": {
+   "70": {
+    "correct": "found",
+    "options": [
+     "find",
+     "found",
+     "found"
+    ],
+    "explanations": {
+     "find": "Find is the present form. This part of the story is in the past."
+    },
+    "label": "Found is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 41,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-9-first-sight-of-qalhara.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 71,
+    "verb": "get"
+   },
+   {
+    "type": "text",
+    "value": "his first close look at a real city gate, tall enough that ten camels could"
+   },
+   {
+    "type": "gap",
+    "id": 72,
+    "verb": "go"
+   },
+   {
+    "type": "text",
+    "value": "through it side by side."
+   }
+  ],
+  "gap_ids": [
+   71,
+   72
+  ],
+  "gaps": {
+   "71": {
+    "correct": "got",
+    "options": [
+     "get",
+     "got",
+     "got"
+    ],
+    "explanations": {
+     "get": "Get is the present form. This part of the story is in the past."
+    },
+    "label": "Got is the past simple and the past participle."
+   },
+   "72": {
+    "correct": "go",
+    "options": [
+     "go",
+     "went",
+     "gone"
+    ],
+    "explanations": {
+     "went": "After 'could', use the base form.",
+     "gone": "After 'could', use the base form."
+    },
+    "label": "Go is the base form."
+   }
+  }
+ },
+ {
+  "page": 42,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "For just a moment, in the crowd near the gate, he"
+   },
+   {
+    "type": "gap",
+    "id": 73,
+    "verb": "see"
+   },
+   {
+    "type": "text",
+    "value": "a tall figure in dark robes moving quickly through the noise, though he"
+   },
+   {
+    "type": "gap",
+    "id": 74,
+    "verb": "say"
+   },
+   {
+    "type": "text",
+    "value": "nothing of it to Yara, unsure why the sight had unsettled him at all."
+   }
+  ],
+  "gap_ids": [
+   73,
+   74
+  ],
+  "gaps": {
+   "73": {
+    "correct": "saw",
+    "options": [
+     "see",
+     "saw",
+     "seen"
+    ],
+    "explanations": {
+     "see": "See is the present form. This part of the story is in the past.",
+     "seen": "Seen is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Saw is the past simple."
+   },
+   "74": {
+    "correct": "said",
+    "options": [
+     "say",
+     "said",
+     "said"
+    ],
+    "explanations": {
+     "say": "Say is the present form. This part of the story is in the past."
+    },
+    "label": "Said is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 43,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 75,
+    "verb": "do"
+   },
+   {
+    "type": "text",
+    "value": "his best to shake off the strange feeling, telling himself it"
+   },
+   {
+    "type": "gap",
+    "id": 76,
+    "verb": "mean"
+   },
+   {
+    "type": "text",
+    "value": "nothing at all in a city this size."
+   }
+  ],
+  "gap_ids": [
+   75,
+   76
+  ],
+  "gaps": {
+   "75": {
+    "correct": "did",
+    "options": [
+     "do",
+     "did",
+     "done"
+    ],
+    "explanations": {
+     "do": "Do is the present form. This part of the story is in the past.",
+     "done": "Done is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Did is the past simple."
+   },
+   "76": {
+    "correct": "meant",
+    "options": [
+     "mean",
+     "meant",
+     "meant"
+    ],
+    "explanations": {
+     "mean": "Mean is the present form. This part of the story is in the past."
+    },
+    "label": "Meant is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 44,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Rafiq"
+   },
+   {
+    "type": "gap",
+    "id": 77,
+    "verb": "give"
+   },
+   {
+    "type": "text",
+    "value": "both of them a final piece of advice before they reached the gate: \"Stay close to each other, and don't"
+   },
+   {
+    "type": "gap",
+    "id": 78,
+    "verb": "leave"
+   },
+   {
+    "type": "text",
+    "value": "the main roads until you know the city better.\""
+   }
+  ],
+  "gap_ids": [
+   77,
+   78
+  ],
+  "gaps": {
+   "77": {
+    "correct": "gave",
+    "options": [
+     "give",
+     "gave",
+     "given"
+    ],
+    "explanations": {
+     "give": "Give is the present form. This part of the story is in the past.",
+     "given": "Given is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Gave is the past simple."
+   },
+   "78": {
+    "correct": "leave",
+    "options": [
+     "leave",
+     "left",
+     "left"
+    ],
+    "explanations": {
+     "left": "After 'don't', use the base form."
+    },
+    "label": "Leave is the base form."
+   }
+  }
+ },
+ {
+  "page": 45,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 79,
+    "verb": "put"
+   },
+   {
+    "type": "text",
+    "value": "the warning carefully in his mind."
+   }
+  ],
+  "gap_ids": [
+   79
+  ],
+  "gaps": {
+   "79": {
+    "correct": "put",
+    "options": [
+     "put",
+     "put",
+     "put"
+    ],
+    "explanations": {},
+    "label": "Put is the same in all three forms."
+   }
+  }
+ },
+ {
+  "page": 46,
+  "wave": 4,
+  "wave_title": "The Long Road",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 80,
+    "verb": "know"
+   },
+   {
+    "type": "text",
+    "value": "already: Qalhara was going to be nothing like the quiet oasis he had left behind."
+   }
+  ],
+  "gap_ids": [
+   80
+  ],
+  "gaps": {
+   "80": {
+    "correct": "knew",
+    "options": [
+     "know",
+     "knew",
+     "known"
+    ],
+    "explanations": {
+     "know": "Know is the present form. This part of the story is in the past.",
+     "known": "Known is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Knew is the past simple."
+   }
+  }
+ },
+ {
+  "page": 47,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "At last, Zafir and Yara"
+   },
+   {
+    "type": "gap",
+    "id": 81,
+    "verb": "be"
+   },
+   {
+    "type": "text",
+    "value": "inside the walls of Qalhara, and the city"
+   },
+   {
+    "type": "gap",
+    "id": 82,
+    "verb": "take"
+   },
+   {
+    "type": "text",
+    "value": "his breath away completely."
+   }
+  ],
+  "gap_ids": [
+   81,
+   82
+  ],
+  "gaps": {
+   "81": {
+    "correct": "were",
+    "options": [
+     "was",
+     "were",
+     "been"
+    ],
+    "explanations": {
+     "was": "Was is for singular subjects, and the subject here is plural.",
+     "been": "Been needs 'has' or 'had' before it."
+    },
+    "label": "Were is the past simple of 'be'."
+   },
+   "82": {
+    "correct": "took",
+    "options": [
+     "take",
+     "took",
+     "taken"
+    ],
+    "explanations": {
+     "take": "Take is the present form. This part of the story is in the past.",
+     "taken": "Taken is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Took is the past simple."
+   }
+  }
+ },
+ {
+  "page": 48,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Lanterns of every colour glowed above the streets, and the smell of roasting spices and sweet pastries"
+   },
+   {
+    "type": "gap",
+    "id": 83,
+    "verb": "make"
+   },
+   {
+    "type": "text",
+    "value": "his stomach growl with hunger."
+   }
+  ],
+  "gap_ids": [
+   83
+  ],
+  "gaps": {
+   "83": {
+    "correct": "made",
+    "options": [
+     "make",
+     "made",
+     "made"
+    ],
+    "explanations": {
+     "make": "Make is the present form. This part of the story is in the past."
+    },
+    "label": "Made is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 49,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Rafiq"
+   },
+   {
+    "type": "gap",
+    "id": 84,
+    "verb": "say"
+   },
+   {
+    "type": "text",
+    "value": "goodbye to them near the marketplace, promising to"
+   },
+   {
+    "type": "gap",
+    "id": 85,
+    "verb": "find"
+   },
+   {
+    "type": "text",
+    "value": "them again before the caravan left the city."
+   }
+  ],
+  "gap_ids": [
+   84,
+   85
+  ],
+  "gaps": {
+   "84": {
+    "correct": "said",
+    "options": [
+     "say",
+     "said",
+     "said"
+    ],
+    "explanations": {
+     "say": "Say is the present form. This part of the story is in the past."
+    },
+    "label": "Said is the past simple and the past participle."
+   },
+   "85": {
+    "correct": "find",
+    "options": [
+     "find",
+     "found",
+     "found"
+    ],
+    "explanations": {
+     "found": "After 'to', use the base form."
+    },
+    "label": "Find is the base form."
+   }
+  }
+ },
+ {
+  "page": 50,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 86,
+    "verb": "feel"
+   },
+   {
+    "type": "text",
+    "value": "a small pang of nervousness as the trader disappeared into the crowd, but Yara"
+   },
+   {
+    "type": "gap",
+    "id": 87,
+    "verb": "give"
+   },
+   {
+    "type": "text",
+    "value": "him a reassuring smile and pulled him toward the noise and colour ahead."
+   }
+  ],
+  "gap_ids": [
+   86,
+   87
+  ],
+  "gaps": {
+   "86": {
+    "correct": "felt",
+    "options": [
+     "feel",
+     "felt",
+     "felt"
+    ],
+    "explanations": {
+     "feel": "Feel is the present form. This part of the story is in the past."
+    },
+    "label": "Felt is the past simple and the past participle."
+   },
+   "87": {
+    "correct": "gave",
+    "options": [
+     "give",
+     "gave",
+     "given"
+    ],
+    "explanations": {
+     "give": "Give is the present form. This part of the story is in the past.",
+     "given": "Given is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Gave is the past simple."
+   }
+  }
+ },
+ {
+  "page": 51,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "They"
+   },
+   {
+    "type": "gap",
+    "id": 88,
+    "verb": "go"
+   },
+   {
+    "type": "text",
+    "value": "from stall to stall, tasting strange sweets and admiring silk scarves in colours the oasis had never seen."
+   }
+  ],
+  "gap_ids": [
+   88
+  ],
+  "gaps": {
+   "88": {
+    "correct": "went",
+    "options": [
+     "go",
+     "went",
+     "gone"
+    ],
+    "explanations": {
+     "go": "Go is the present form. This part of the story is in the past.",
+     "gone": "Gone is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Went is the past simple."
+   }
+  }
+ },
+ {
+  "page": 52,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 89,
+    "verb": "think"
+   },
+   {
+    "type": "text",
+    "value": "he could spend a lifetime here and still not see everything the city had to offer."
+   }
+  ],
+  "gap_ids": [
+   89
+  ],
+  "gaps": {
+   "89": {
+    "correct": "thought",
+    "options": [
+     "think",
+     "thought",
+     "thought"
+    ],
+    "explanations": {
+     "think": "Think is the present form. This part of the story is in the past."
+    },
+    "label": "Thought is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 53,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "As evening fell, musicians"
+   },
+   {
+    "type": "gap",
+    "id": 90,
+    "verb": "come"
+   },
+   {
+    "type": "text",
+    "value": "out into the squares, and dancers"
+   },
+   {
+    "type": "gap",
+    "id": 91,
+    "verb": "get"
+   },
+   {
+    "type": "text",
+    "value": "the whole crowd moving together under the lantern light."
+   }
+  ],
+  "gap_ids": [
+   90,
+   91
+  ],
+  "gaps": {
+   "90": {
+    "correct": "came",
+    "options": [
+     "come",
+     "came",
+     "come"
+    ],
+    "explanations": {
+     "come": "Come is the present form. This part of the story is in the past."
+    },
+    "label": "Came is the past simple."
+   },
+   "91": {
+    "correct": "got",
+    "options": [
+     "get",
+     "got",
+     "got"
+    ],
+    "explanations": {
+     "get": "Get is the present form. This part of the story is in the past."
+    },
+    "label": "Got is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 54,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-10-watching-stranger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 92,
+    "verb": "know"
+   },
+   {
+    "type": "text",
+    "value": ", right then, that he would remember this night for the rest of his life, however long that turned out to be."
+   }
+  ],
+  "gap_ids": [
+   92
+  ],
+  "gaps": {
+   "92": {
+    "correct": "knew",
+    "options": [
+     "know",
+     "knew",
+     "known"
+    ],
+    "explanations": {
+     "know": "Know is the present form. This part of the story is in the past.",
+     "known": "Known is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Knew is the past simple."
+   }
+  }
+ },
+ {
+  "page": 55,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-11-fireworks-cliffhanger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Then, just as the first fireworks lit up the sky above the palace, Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 93,
+    "verb": "see"
+   },
+   {
+    "type": "text",
+    "value": "the same tall figure in dark robes again - this time standing perfectly still near the palace steps, watching the crowd instead of joining it."
+   }
+  ],
+  "gap_ids": [
+   93
+  ],
+  "gaps": {
+   "93": {
+    "correct": "saw",
+    "options": [
+     "see",
+     "saw",
+     "seen"
+    ],
+    "explanations": {
+     "see": "See is the present form. This part of the story is in the past.",
+     "seen": "Seen is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Saw is the past simple."
+   }
+  }
+ },
+ {
+  "page": 56,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-11-fireworks-cliffhanger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Something about the stillness"
+   },
+   {
+    "type": "gap",
+    "id": 94,
+    "verb": "tell"
+   },
+   {
+    "type": "text",
+    "value": "him this was not simply a curious traveller."
+   }
+  ],
+  "gap_ids": [
+   94
+  ],
+  "gaps": {
+   "94": {
+    "correct": "told",
+    "options": [
+     "tell",
+     "told",
+     "told"
+    ],
+    "explanations": {
+     "tell": "Tell is the present form. This part of the story is in the past."
+    },
+    "label": "Told is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 57,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-11-fireworks-cliffhanger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "He"
+   },
+   {
+    "type": "gap",
+    "id": 95,
+    "verb": "do"
+   },
+   {
+    "type": "text",
+    "value": "not have time to think about it further, because Yara"
+   },
+   {
+    "type": "gap",
+    "id": 96,
+    "verb": "have"
+   },
+   {
+    "type": "text",
+    "value": "no patience left for waiting and pulled him toward the palace square, eager not to miss the fireworks."
+   }
+  ],
+  "gap_ids": [
+   95,
+   96
+  ],
+  "gaps": {
+   "95": {
+    "correct": "did",
+    "options": [
+     "do",
+     "did",
+     "done"
+    ],
+    "explanations": {
+     "do": "Do is the present form. This part of the story is in the past.",
+     "done": "Done is a past participle, so it needs 'had' or 'has' before it."
+    },
+    "label": "Did is the past simple."
+   },
+   "96": {
+    "correct": "had",
+    "options": [
+     "have",
+     "had",
+     "had"
+    ],
+    "explanations": {
+     "have": "Have is the present form. This part of the story is in the past."
+    },
+    "label": "Had is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 58,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-11-fireworks-cliffhanger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "Zafir"
+   },
+   {
+    "type": "gap",
+    "id": 97,
+    "verb": "leave"
+   },
+   {
+    "type": "text",
+    "value": "the strange feeling behind for now, telling himself it probably"
+   },
+   {
+    "type": "gap",
+    "id": 98,
+    "verb": "mean"
+   },
+   {
+    "type": "text",
+    "value": "nothing."
+   }
+  ],
+  "gap_ids": [
+   97,
+   98
+  ],
+  "gaps": {
+   "97": {
+    "correct": "left",
+    "options": [
+     "leave",
+     "left",
+     "left"
+    ],
+    "explanations": {
+     "leave": "Leave is the present form. This part of the story is in the past."
+    },
+    "label": "Left is the past simple and the past participle."
+   },
+   "98": {
+    "correct": "meant",
+    "options": [
+     "mean",
+     "meant",
+     "meant"
+    ],
+    "explanations": {
+     "mean": "Mean is the present form. This part of the story is in the past."
+    },
+    "label": "Meant is the past simple and the past participle."
+   }
+  }
+ },
+ {
+  "page": 59,
+  "wave": 5,
+  "wave_title": "The Gates of Qalhara",
+  "scene": "scene-11-fireworks-cliffhanger.png",
+  "parts": [
+   {
+    "type": "text",
+    "value": "But he"
+   },
+   {
+    "type": "gap",
+    "id": 99,
+    "verb": "put"
+   },
+   {
+    "type": "text",
+    "value": "the memory carefully aside all the same, a small quiet warning he did not yet understand, and somewhere above the noise and light of the festival, Qalhara was only just"
+   },
+   {
+    "type": "gap",
+    "id": 100,
+    "verb": "become"
+   },
+   {
+    "type": "text",
+    "value": "the place where his whole story was about to change."
+   }
+  ],
+  "gap_ids": [
+   99,
+   100
+  ],
+  "gaps": {
+   "99": {
+    "correct": "put",
+    "options": [
+     "put",
+     "put",
+     "put"
+    ],
+    "explanations": {},
+    "label": "Put is the same in all three forms."
+   },
+   "100": {
+    "correct": "becoming",
+    "options": [
+     "become",
+     "became",
+     "becoming"
+    ],
+    "explanations": {
+     "become": "After 'was', the action is still in progress. Use the -ing form.",
+     "became": "After 'was', the action is still in progress. Use the -ing form."
+    },
+    "label": "Becoming is the -ing form."
+   }
+  }
+ }
+]

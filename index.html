@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Zafir: Out of the Oasis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #FFD700;
+    --gold-dark: #8a6a10;
+    --p1: #1a0030;
+    --p2: #2a0d4d;
+    --p3: #3a1a5a;
+    --cream: #f5e8c0;
+    --good: #90ee90;
+    --bad: #f2a59c;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: var(--p1);
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    color: var(--cream);
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+  }
+  button { font-family: inherit; }
+  #app {
+    max-width: 520px; margin: 0 auto;
+    height: 100vh; height: 100dvh;
+    display: flex; flex-direction: column;
+    position: relative; background: var(--p1);
+    overflow: hidden;
+  }
+  .hidden { display: none !important; }
+
+  /* ---------- Buttons ---------- */
+  .gold-btn {
+    border: 2px solid var(--gold-dark);
+    background: linear-gradient(#ffe45c, #FFD700 55%, #d9a900);
+    color: #3a1a5a;
+    font-family: 'Bangers', 'Impact', sans-serif;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.4);
+  }
+  .gold-btn:active { transform: translateY(2px); }
+  .green-btn {
+    border: 2px solid #2f7d32;
+    background: linear-gradient(#b8f2b8, #90ee90 55%, #5cc45c);
+    color: #14401a;
+    font-family: 'Bangers', 'Impact', sans-serif;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.4);
+  }
+  .green-btn:active { transform: translateY(2px); }
+  .ghost-btn {
+    background: rgba(26,0,48,0.55);
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Bangers', 'Impact', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .ghost-btn:active { transform: translateY(1px); }
+
+  /* ---------- Cover ---------- */
+  #menu {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: space-between;
+    text-align: center;
+    padding: 6vh 22px calc(5vh + env(safe-area-inset-bottom));
+    background:
+      linear-gradient(to bottom, rgba(26,0,48,0.82) 0%, rgba(26,0,48,0.3) 32%, rgba(26,0,48,0.12) 55%, rgba(26,0,48,0.9) 100%),
+      url("scene-1-oasis-pool.png") center / cover no-repeat,
+      var(--p1);
+  }
+  #menu h1 {
+    margin: 0; font-family: 'Bangers', 'Impact', sans-serif; font-weight: normal;
+    font-size: clamp(54px, 17vw, 76px); line-height: 0.95; letter-spacing: 0.04em;
+    color: var(--gold); text-shadow: 0 4px 0 #4a2f18, 0 0 22px rgba(0,0,0,0.7);
+  }
+  #menu h1 span { display: block; font-size: 0.55em; margin-top: 6px; }
+  #menu .tag {
+    margin: 12px 0 0; font-family: 'Bangers', 'Impact', sans-serif; font-weight: normal;
+    font-size: 24px; letter-spacing: 0.06em; color: var(--cream);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  }
+  #menu .intro {
+    margin: 8px auto 0; max-width: 310px; font-weight: 800; font-size: 15px; line-height: 1.4;
+    color: var(--cream); text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  }
+  #menu-bottom { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  #begin-btn, #continue-btn { font-size: 30px; padding: 8px 0; width: 230px; border-radius: 999px; }
+  #menu-small { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 2px; }
+
+  /* ---------- Game ---------- */
+  #game { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  #topbar {
+    flex-shrink: 0; display: flex; align-items: center; gap: 8px;
+    padding: 6px 10px; background: var(--p1);
+    font-family: 'Bangers', 'Impact', sans-serif; font-size: 16px; letter-spacing: 0.05em; color: var(--gold);
+  }
+  #back-btn {
+    width: 34px; height: 30px; padding: 0; border-radius: 8px; font-size: 20px; line-height: 1;
+    background: var(--p3); border: 2px solid var(--gold); color: var(--gold); cursor: pointer;
+  }
+  #wave-text { white-space: nowrap; }
+  #progress-track { flex: 1; height: 6px; background: rgba(255,215,0,0.2); border-radius: 3px; overflow: hidden; }
+  #progress-fill { height: 100%; width: 0; background: var(--gold); transition: width 0.35s ease; }
+  #count-text { white-space: nowrap; }
+  #verbs-btn { font-size: 14px; padding: 3px 10px; }
+
+  #scene-wrap { position: relative; flex: 1 1 0; min-height: 80px; background: #0e0020; overflow: hidden; }
+  #scene-img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    opacity: 0; transition: opacity 0.4s ease;
+  }
+  #scene-img.loaded { opacity: 1; }
+
+  #story-strip {
+    flex-shrink: 0; background: var(--p2); border-top: 3px solid var(--gold);
+    padding: 10px 14px; line-height: 1.38; font-weight: 800; color: var(--cream);
+    height: 36dvh; height: 36vh; height: 36dvh;
+    overflow: hidden; display: flex; align-items: center;
+  }
+  #story-text { display: block; width: 100%; }
+  .gap {
+    white-space: nowrap; color: var(--gold); font-weight: 800; border-bottom: 2px dashed rgba(255,215,0,0.5);
+  }
+  .gap small { font-size: 0.72em; opacity: 0.85; }
+  .gap.filled { color: var(--good); border-bottom: 2px solid var(--gold); }
+  .gap.active { color: #fff3b0; border-bottom: 2px dashed var(--gold); }
+
+  #options { flex-shrink: 0; display: flex; gap: 8px; padding: 9px 10px 4px; background: var(--p3); }
+  .opt-btn {
+    flex: 1 1 0; min-width: 0; height: 54px; border-radius: 12px;
+    font-size: 26px; padding: 0 2px; border: 2px solid var(--gold-dark);
+    background: linear-gradient(#ffe45c, #FFD700 55%, #d9a900); color: #3a1a5a;
+    font-family: 'Bangers', 'Impact', sans-serif; letter-spacing: 0.04em; cursor: pointer;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.4); white-space: nowrap; overflow: hidden;
+  }
+  .opt-btn:active:not(:disabled) { transform: translateY(2px); }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.dim { opacity: 0.4; }
+  .opt-btn.ok { background: linear-gradient(#b8f2b8, #90ee90 55%, #5cc45c); border-color: #2f7d32; opacity: 1; }
+  .opt-btn.no { background: linear-gradient(#f2a59c, #d9534f 55%, #a3392f); border-color: #6e1f19; color: #fff; }
+
+  #footer {
+    flex-shrink: 0; background: var(--p3); min-height: 66px; text-align: center;
+    padding: 4px 16px calc(8px + env(safe-area-inset-bottom));
+    font-size: 14px; line-height: 1.3; font-weight: 800; color: var(--cream);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  }
+  #footer .bad { color: var(--bad); }
+  #footer .good { color: var(--good); }
+  #footer .try { color: var(--gold); font-family: 'Bangers', 'Impact', sans-serif; font-size: 17px; letter-spacing: 0.05em; font-weight: normal; }
+  #review-next { font-size: 20px; padding: 4px 22px; border-radius: 999px; }
+
+  /* ---------- Overlays ---------- */
+  .overlay {
+    position: absolute; inset: 0; z-index: 20; display: flex; align-items: center; justify-content: center;
+    background: rgba(10,0,20,0.82); padding: 14px;
+  }
+  .card {
+    width: 100%; max-width: 440px; max-height: 100%; display: flex; flex-direction: column;
+    background: var(--p2); border: 3px solid var(--gold); border-radius: 16px; padding: 14px 14px 12px;
+  }
+  .card h2 {
+    margin: 0 0 8px; text-align: center; font-family: 'Bangers', 'Impact', sans-serif; font-weight: normal;
+    font-size: 30px; letter-spacing: 0.05em; color: var(--gold);
+  }
+  .card .scroll { overflow-y: auto; min-height: 0; flex: 1; }
+  .card .close { margin: 10px auto 0; font-size: 22px; padding: 4px 34px; border-radius: 999px; }
+
+  table.forms { width: 100%; border-collapse: collapse; font-size: 15px; text-align: center; }
+  table.forms th {
+    position: sticky; top: 0; background: var(--p3); color: var(--gold);
+    font-family: 'Bangers', 'Impact', sans-serif; font-weight: normal; letter-spacing: 0.04em; font-size: 15px; padding: 6px 4px;
+  }
+  table.forms td { padding: 5px 4px; border-bottom: 1px solid rgba(255,215,0,0.18); font-weight: 800; }
+  table.forms tr:nth-child(even) td { background: rgba(255,255,255,0.04); }
+  table.forms td:first-child { color: var(--gold); }
+
+  #lang-chips { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 8px; }
+  .chip {
+    border: 2px solid var(--gold); background: transparent; color: var(--gold); border-radius: 999px;
+    padding: 3px 10px; font-size: 13px; font-weight: 800; cursor: pointer;
+  }
+  .chip.on { background: var(--gold); color: var(--p1); }
+  #how-list { margin: 0; padding: 0 4px 0 22px; font-size: 16px; line-height: 1.4; font-weight: 700; }
+  #how-list li { margin-bottom: 10px; }
+  #how-list[dir="rtl"] { padding: 0 22px 0 4px; text-align: right; }
+
+  #paywall p { margin: 6px 0 12px; text-align: center; font-size: 16px; line-height: 1.4; font-weight: 800; }
+  #paywall .row { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+  #paywall a.gold-btn { text-decoration: none; display: inline-block; font-size: 26px; padding: 6px 28px; border-radius: 999px; }
+
+  /* ---------- End ---------- */
+  #end {
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 20px 22px; gap: 8px; position: relative;
+    background: linear-gradient(var(--p1), var(--p2));
+  }
+  #end .emoji { font-size: 64px; line-height: 1; }
+  #end .grade { font-family: 'Bangers', 'Impact', sans-serif; font-size: 44px; letter-spacing: 0.05em; color: var(--gold); }
+  #end .score { font-family: 'Bangers', 'Impact', sans-serif; font-size: 26px; letter-spacing: 0.05em; }
+  #end .cliff { max-width: 340px; font-size: 15px; line-height: 1.4; font-weight: 800; margin: 6px 0 10px; }
+  #again-btn { font-size: 28px; padding: 8px 40px; border-radius: 999px; }
+  #quest-link { position: absolute; left: 14px; bottom: calc(12px + env(safe-area-inset-bottom)); font-size: 14px; padding: 4px 12px; text-decoration: none; }
+
+  @media (max-height: 640px) {
+    #story-strip { height: 38dvh; }
+    #menu { padding-top: 3vh; }
+    #menu .intro { font-size: 13px; }
+    #begin-btn, #continue-btn { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- COVER -->
+  <div id="menu">
+    <div>
+      <h1>Zafir<span>Out of the Oasis</span></h1>
+      <p class="tag">Test your irregular verbs</p>
+      <p class="intro">Fill each gap with the correct form of the verb shown to help Zafir reach Qalhara.</p>
+    </div>
+    <div id="menu-bottom">
+      <button id="begin-btn" class="gold-btn">Begin</button>
+      <button id="continue-btn" class="green-btn hidden">Continue</button>
+      <div id="menu-small">
+        <button id="menu-verbs" class="ghost-btn">Verb Forms</button>
+        <button id="menu-how" class="ghost-btn">How to Play</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" class="hidden">
+    <div id="topbar">
+      <button id="back-btn" aria-label="Back">&#8249;</button>
+      <span id="wave-text">Wave 1</span>
+      <div id="progress-track"><div id="progress-fill"></div></div>
+      <span id="count-text">0 / 100</span>
+      <button id="verbs-btn" class="ghost-btn">Verbs</button>
+    </div>
+    <div id="scene-wrap"><img id="scene-img" src="" alt=""></div>
+    <div id="story-strip"><span id="story-text"></span></div>
+    <div id="options"></div>
+    <div id="footer"></div>
+  </div>
+
+  <!-- END -->
+  <div id="end" class="hidden">
+    <div class="emoji" id="end-emoji"></div>
+    <div class="grade" id="end-grade"></div>
+    <div class="score" id="end-score"></div>
+    <p class="cliff">Zafir has reached the gates of Qalhara, but who is the figure in dark robes, and why does he keep watching instead of joining the festival?</p>
+    <button id="again-btn" class="gold-btn">Play Again</button>
+    <a id="quest-link" class="ghost-btn" target="_blank" rel="noopener">Quest</a>
+  </div>
+
+  <!-- VERB FORMS -->
+  <div id="verbs-overlay" class="overlay hidden">
+    <div class="card">
+      <h2>Verb Forms</h2>
+      <div class="scroll">
+        <table class="forms">
+          <thead><tr><th>Base</th><th>Past simple</th><th>Past participle</th></tr></thead>
+          <tbody id="forms-body"></tbody>
+        </table>
+      </div>
+      <button class="gold-btn close" data-close="verbs-overlay">Close</button>
+    </div>
+  </div>
+
+  <!-- HOW TO PLAY -->
+  <div id="how-overlay" class="overlay hidden">
+    <div class="card">
+      <h2 id="how-title">How to Play</h2>
+      <div id="lang-chips"></div>
+      <div class="scroll"><ol id="how-list"></ol></div>
+      <button class="gold-btn close" id="how-close" data-close="how-overlay">OK</button>
+    </div>
+  </div>
+
+  <!-- PAYWALL -->
+  <div id="paywall" class="overlay hidden">
+    <div class="card">
+      <h2>Keep Going</h2>
+      <p>You have helped Zafir leave the oasis. Get the full game to follow him to Qalhara and finish all 100 gaps.</p>
+      <div class="row">
+        <a id="buy-link" class="gold-btn" target="_blank" rel="noopener">Get the full game</a>
+        <button id="later-btn" class="ghost-btn">Maybe later</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ------------------------------------------------------------------
+   CONFIG
+------------------------------------------------------------------ */
+const DATA_URL = "game1-pages-data.json";
+const IMG_ROOT = "";
+const PAYWALL_ENABLED = true;
+const GATE_PAGE_INDEX = 10;      // first page of wave 2 (after gap 20)
+const PLAY_URL  = "https://play.google.com/store/apps/details?id=com.gamesforimprovingEnglish.zafiroasis"; // UNCONFIRMED package ID
+const QUEST_URL = "https://play.google.com/store/search?q=Zest%20English%20Quest&c=apps";                    // UNCONFIRMED
+const SAVE_VER = "1";
+
+/* ------------------------------------------------------------------
+   VERB TABLE
+------------------------------------------------------------------ */
+const FORMS = [
+  ["be","was / were","been"],["have","had","had"],["do","did","done"],["say","said","said"],
+  ["go","went","gone"],["get","got","got"],["make","made","made"],["know","knew","known"],
+  ["think","thought","thought"],["see","saw","seen"],["come","came","come"],["take","took","taken"],
+  ["find","found","found"],["give","gave","given"],["tell","told","told"],["feel","felt","felt"],
+  ["become","became","become"],["leave","left","left"],["put","put","put"],["mean","meant","meant"]
+];
+
+/* ------------------------------------------------------------------
+   HOW TO PLAY, 10 languages
+------------------------------------------------------------------ */
+const HOW = {
+  en:{n:"English",t:"How to Play",ok:"OK",i:[
+    "Read the story. Tap the correct form of the verb shown in brackets.",
+    "If you tap a wrong form, a short note tells you why it does not fit this sentence. Then try again.",
+    "Two or three buttons may look the same. That is not a mistake. Some verbs have the same form more than once.",
+    "Words in quotation marks are what people say, so they can be in the present tense. Outside the quotation marks, the story is told in the past.",
+    "Tap Verb Forms at any time to see the chart."]},
+  es:{n:"Español",t:"Cómo jugar",ok:"OK",i:[
+    "Lee la historia. Toca la forma correcta del verbo que aparece entre paréntesis.",
+    "Si tocas una forma incorrecta, una nota breve te explica por qué no encaja en esta frase. Después, inténtalo de nuevo.",
+    "Dos o tres botones pueden parecer iguales. No es un error. Algunos verbos repiten la misma forma.",
+    "Las palabras entre comillas son lo que dicen las personas, así que pueden estar en presente. Fuera de las comillas, la historia se cuenta en pasado.",
+    "Toca Verb Forms en cualquier momento para ver la tabla."]},
+  fr:{n:"Français",t:"Comment jouer",ok:"OK",i:[
+    "Lisez l'histoire. Touchez la forme correcte du verbe indiqué entre parenthèses.",
+    "Si vous touchez une mauvaise forme, une courte note explique pourquoi elle ne convient pas à cette phrase. Puis réessayez.",
+    "Deux ou trois boutons peuvent sembler identiques. Ce n'est pas une erreur. Certains verbes ont plusieurs formes identiques.",
+    "Les mots entre guillemets sont ce que disent les personnages, ils peuvent donc être au présent. En dehors des guillemets, l'histoire est racontée au passé.",
+    "Touchez Verb Forms à tout moment pour voir le tableau."]},
+  de:{n:"Deutsch",t:"So wird gespielt",ok:"OK",i:[
+    "Lies die Geschichte. Tippe auf die richtige Form des Verbs in Klammern.",
+    "Wenn du eine falsche Form antippst, erklärt ein kurzer Hinweis, warum sie nicht in diesen Satz passt. Dann versuche es noch einmal.",
+    "Zwei oder drei Schaltflächen können gleich aussehen. Das ist kein Fehler. Manche Verben haben mehrere gleiche Formen.",
+    "Wörter in Anführungszeichen sind das, was die Figuren sagen, daher können sie im Präsens stehen. Außerhalb der Anführungszeichen wird die Geschichte in der Vergangenheit erzählt.",
+    "Tippe jederzeit auf Verb Forms, um die Tabelle zu sehen."]},
+  ru:{n:"Русский",t:"Как играть",ok:"OK",i:[
+    "Прочитайте историю. Нажмите на правильную форму глагола, указанного в скобках.",
+    "Если вы нажмёте неправильную форму, короткая подсказка объяснит, почему она не подходит к этому предложению. Затем попробуйте снова.",
+    "Две или три кнопки могут выглядеть одинаково. Это не ошибка. У некоторых глаголов формы совпадают.",
+    "Слова в кавычках передают речь людей, поэтому они могут стоять в настоящем времени. Вне кавычек история рассказана в прошедшем времени.",
+    "Нажмите Verb Forms в любой момент, чтобы увидеть таблицу."]},
+  zh:{n:"中文",t:"玩法",ok:"OK",i:[
+    "阅读故事。点击括号中动词的正确形式。",
+    "如果点错了，会有一条简短说明告诉你这个形式为什么不适合这句话。然后再试一次。",
+    "有两三个按钮看起来一样，这不是错误。有些动词的几种形式是相同的。",
+    "引号里的词是人物所说的话，所以可以用现在时。引号之外，故事用过去时讲述。",
+    "随时点击 Verb Forms 查看动词表。"]},
+  ja:{n:"日本語",t:"遊び方",ok:"OK",i:[
+    "物語を読んで、かっこ内の動詞の正しい形をタップしてください。",
+    "間違った形をタップすると、この文に合わない理由が短く表示されます。もう一度挑戦しましょう。",
+    "同じに見えるボタンが2つか3つある場合があります。間違いではありません。動詞によっては同じ形が複数あります。",
+    "引用符の中の言葉は人々が話している言葉なので、現在形になることがあります。引用符の外では、物語は過去形で語られます。",
+    "いつでも Verb Forms をタップして一覧表を見られます。"]},
+  hi:{n:"हिन्दी",t:"कैसे खेलें",ok:"OK",i:[
+    "कहानी पढ़ें। कोष्ठक में दिए गए क्रिया के सही रूप पर टैप करें।",
+    "अगर आप गलत रूप पर टैप करते हैं, तो एक छोटा सा नोट बताएगा कि वह इस वाक्य में क्यों सही नहीं बैठता। फिर दोबारा कोशिश करें।",
+    "दो या तीन बटन एक जैसे दिख सकते हैं। यह गलती नहीं है। कुछ क्रियाओं के रूप एक जैसे होते हैं।",
+    "उद्धरण चिह्नों के अंदर के शब्द वही हैं जो लोग बोलते हैं, इसलिए वे वर्तमान काल में हो सकते हैं। उद्धरण चिह्नों के बाहर कहानी भूतकाल में सुनाई गई है।",
+    "तालिका देखने के लिए कभी भी Verb Forms पर टैप करें।"]},
+  ar:{n:"العربية",t:"طريقة اللعب",ok:"OK",rtl:true,i:[
+    "اقرأ القصة. اضغط على الصيغة الصحيحة للفعل المعروض بين القوسين.",
+    "إذا ضغطت على صيغة خاطئة، ستظهر ملاحظة قصيرة تشرح لماذا لا تناسب هذه الجملة. ثم حاول مرة أخرى.",
+    "قد يبدو زران أو ثلاثة أزرار متشابهة. هذا ليس خطأً. بعض الأفعال لها الصيغة نفسها أكثر من مرة.",
+    "الكلمات بين علامات الاقتباس هي ما يقوله الناس، لذلك يمكن أن تكون في زمن المضارع. خارج علامات الاقتباس تُروى القصة في الماضي.",
+    "اضغط على Verb Forms في أي وقت لرؤية الجدول."]},
+  id:{n:"Indonesia",t:"Cara bermain",ok:"OK",i:[
+    "Baca ceritanya. Ketuk bentuk kata kerja yang benar yang ditampilkan dalam tanda kurung.",
+    "Jika kamu mengetuk bentuk yang salah, catatan singkat menjelaskan mengapa bentuk itu tidak cocok dalam kalimat ini. Lalu coba lagi.",
+    "Dua atau tiga tombol mungkin terlihat sama. Itu bukan kesalahan. Beberapa kata kerja memiliki bentuk yang sama.",
+    "Kata-kata dalam tanda kutip adalah ucapan orang, jadi bisa memakai bentuk sekarang (present). Di luar tanda kutip, cerita disampaikan dalam bentuk lampau.",
+    "Ketuk Verb Forms kapan saja untuk melihat tabel."]}
+};
+
+/* ------------------------------------------------------------------
+   SOUND
+------------------------------------------------------------------ */
+let audioCtx = null;
+function actx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+function tone(freq, start, dur, type, gain) {
+  const c = actx(), osc = c.createOscillator(), g = c.createGain();
+  osc.type = type; osc.frequency.value = freq;
+  g.gain.setValueAtTime(0, c.currentTime + start);
+  g.gain.linearRampToValueAtTime(gain, c.currentTime + start + 0.01);
+  g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + start + dur);
+  osc.connect(g).connect(c.destination);
+  osc.start(c.currentTime + start); osc.stop(c.currentTime + start + dur + 0.02);
+}
+function playCorrect() { try { tone(880, 0, 0.14, "sine", 0.18); tone(1318.5, 0.09, 0.18, "sine", 0.16); } catch (e) {} }
+function playWrong()   { try { tone(180, 0, 0.22, "sawtooth", 0.12); } catch (e) {} }
+
+/* ------------------------------------------------------------------
+   SAVE (localStorage, safe if blocked)
+------------------------------------------------------------------ */
+const K = { ver:"oasis_ver", pi:"oasis_pi", sc:"oasis_sc", dn:"oasis_dn", buy:"oasis_purchased" };
+function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function lsDel(k) { try { localStorage.removeItem(k); } catch (e) {} }
+
+/* ------------------------------------------------------------------
+   STATE
+------------------------------------------------------------------ */
+let PAGES = [];
+let TOTAL = 0;
+let pageIdx = 0;        // page shown (live or review)
+let frontier = 0;       // furthest page the player has reached
+let gapPos = 0;
+let score = 0;          // first-try correct, committed pages only
+let done = 0;           // gaps completed, committed pages only
+let pageScore = 0;      // first-try correct on the current live page
+let gapMissed = false;
+let locked = false;
+let reviewing = false;
+let timer = null;
+let purchased = false;
+
+const $ = id => document.getElementById(id);
+const el = {
+  menu:$("menu"), game:$("game"), end:$("end"),
+  begin:$("begin-btn"), cont:$("continue-btn"),
+  wave:$("wave-text"), count:$("count-text"), fill:$("progress-fill"),
+  img:$("scene-img"), strip:$("story-strip"), story:$("story-text"),
+  opts:$("options"), foot:$("footer"), back:$("back-btn"),
+  paywall:$("paywall")
+};
+
+/* ------------------------------------------------------------------
+   HELPERS
+------------------------------------------------------------------ */
+function show(node, on) { node.classList.toggle("hidden", !on); }
+function showScreen(name) {
+  show(el.menu, name === "menu"); show(el.game, name === "game"); show(el.end, name === "end");
+}
+function hasSave() {
+  return lsGet(K.ver) === SAVE_VER && lsGet(K.pi) !== null && PAGES.length > 0;
+}
+function save() {
+  lsSet(K.ver, SAVE_VER); lsSet(K.pi, String(frontier));
+  lsSet(K.sc, String(score)); lsSet(K.dn, String(done));
+}
+function clearSave() { lsDel(K.pi); lsDel(K.sc); lsDel(K.dn); lsDel(K.ver); }
+function refreshMenu() { show(el.cont, hasSave() && Number(lsGet(K.pi)) > 0); }
+
+/* Auto-fit: largest font (13..28px) at which the story fits its strip, no scrolling */
+function fitStory() {
+  const s = el.strip, t = el.story;
+  const maxH = s.clientHeight - 20;
+  let size = 28;
+  t.style.fontSize = size + "px";
+  while (size > 13 && t.scrollHeight > maxH) { size--; t.style.fontSize = size + "px"; }
+}
+window.addEventListener("resize", () => { if (!el.game.classList.contains("hidden")) fitStory(); });
+
+/* ------------------------------------------------------------------
+   RENDER
+------------------------------------------------------------------ */
+function renderStory(p, activePos, showAll) {
+  el.story.textContent = "";
+  let first = true;
+  p.parts.forEach(part => {
+    let node;
+    if (part.type === "text") {
+      node = document.createTextNode(part.value);
+      const startsPunct = /^[,.;:!?]/.test(part.value);
+      if (!first && !startsPunct) el.story.appendChild(document.createTextNode(" "));
+      el.story.appendChild(node);
+    } else {
+      const g = p.gaps[String(part.id)];
+      const pos = p.gap_ids.indexOf(part.id);
+      const span = document.createElement("span");
+      span.className = "gap";
+      if (showAll || pos < activePos) {
+        span.classList.add("filled"); span.textContent = g.correct;
+      } else {
+        if (pos === activePos) span.classList.add("active");
+        span.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ";
+        const sm = document.createElement("small"); sm.textContent = "(" + part.verb + ")";
+        span.appendChild(sm);
+      }
+      if (!first) el.story.appendChild(document.createTextNode(" "));
+      el.story.appendChild(span);
+    }
+    first = false;
+  });
+  fitStory();
+}
+
+function setScene(p) {
+  const src = IMG_ROOT + p.scene;
+  if (el.img.getAttribute("src") !== src) {
+    el.img.classList.remove("loaded");
+    el.img.onload = () => el.img.classList.add("loaded");
+    el.img.src = src;
+  }
+}
+
+function setTop(p) {
+  el.wave.textContent = "Wave " + p.wave;
+  const shown = reviewing ? doneBeforePage(pageIdx) + p.gap_ids.length : done;
+  el.count.textContent = shown + " / " + TOTAL;
+  el.fill.style.width = (shown / TOTAL * 100) + "%";
+}
+function doneBeforePage(i) {
+  let n = 0; for (let k = 0; k < i; k++) n += PAGES[k].gap_ids.length; return n;
+}
+
+function renderPage(i) {
+  clearTimeout(timer); locked = false;
+  pageIdx = i; reviewing = i < frontier;
+  const p = PAGES[i];
+  setScene(p); setTop(p);
+  gapPos = 0; gapMissed = false; pageScore = 0;
+  if (reviewing) {
+    renderStory(p, 0, true);
+    el.opts.innerHTML = ""; show(el.opts, false);
+    el.foot.innerHTML = "";
+    const b = document.createElement("button");
+    b.id = "review-next"; b.className = "gold-btn"; b.textContent = "Next";
+    b.onclick = () => renderPage(i + 1 < frontier ? i + 1 : frontier);
+    el.foot.appendChild(b);
+  } else {
+    show(el.opts, true);
+    renderStory(p, 0, false);
+    renderOptions();
+    setFoot("");
+  }
+}
+
+function setFoot(html, cls) {
+  el.foot.innerHTML = "";
+  if (!html) return;
+  const d = document.createElement("div"); if (cls) d.className = cls; d.textContent = html; el.foot.appendChild(d);
+}
+
+function currentGap() {
+  const p = PAGES[pageIdx]; const id = p.gap_ids[gapPos];
+  return { id, g: p.gaps[String(id)] };
+}
+
+function renderOptions() {
+  const { g } = currentGap();
+  el.opts.innerHTML = "";
+  g.options.forEach(word => {
+    const b = document.createElement("button");
+    b.className = "opt-btn"; b.textContent = word;
+    b.onclick = () => answer(b, word);
+    el.opts.appendChild(b);
+  });
+}
+
+/* ------------------------------------------------------------------
+   ANSWER
+------------------------------------------------------------------ */
+function answer(btn, word) {
+  if (locked) return;
+  const p = PAGES[pageIdx]; const { g } = currentGap();
+  if (word === g.correct) {
+    locked = true; playCorrect();
+    if (!gapMissed) pageScore++;
+    // colour every button that shows the right word, dim the rest
+    [...el.opts.children].forEach(b => {
+      b.disabled = true;
+      if (b.textContent === g.correct) b.classList.add("ok"); else b.classList.add("dim");
+    });
+    renderStory(p, gapPos + 1, false);
+    el.foot.innerHTML = "";
+    const d = document.createElement("div"); d.className = "good";
+    d.textContent = "Nice. " + (g.label || ""); el.foot.appendChild(d);
+    const lastGap = gapPos === p.gap_ids.length - 1;
+    timer = setTimeout(() => {
+      if (!lastGap) { gapPos++; gapMissed = false; renderOptions(); setFoot(""); locked = false; renderStory(p, gapPos, false); }
+      else finishPage();
+    }, lastGap ? 2800 : 2000);
+  } else {
+    playWrong(); gapMissed = true;
+    btn.disabled = true; btn.classList.add("no");
+    // also disable any twin of the wrong word
+    [...el.opts.children].forEach(b => { if (b.textContent === word) { b.disabled = true; b.classList.add("no"); } });
+    el.foot.innerHTML = "";
+    const e = document.createElement("div"); e.className = "bad";
+    e.textContent = (g.explanations && g.explanations[word]) || "That form does not fit this sentence.";
+    const t = document.createElement("div"); t.className = "try"; t.textContent = "Try again.";
+    el.foot.appendChild(e); el.foot.appendChild(t);
+  }
+}
+
+function finishPage() {
+  const p = PAGES[pageIdx];
+  score += pageScore; done += p.gap_ids.length;
+  const next = pageIdx + 1;
+  frontier = next;
+  if (next >= PAGES.length) { save(); showEnd(); return; }
+  save();
+  if (PAYWALL_ENABLED && !purchased && next === GATE_PAGE_INDEX) { showPaywall(); return; }
+  renderPage(next);
+}
+
+/* ------------------------------------------------------------------
+   PAYWALL
+------------------------------------------------------------------ */
+function showPaywall() { $("buy-link").href = PLAY_URL; show(el.paywall, true); }
+$("later-btn").onclick = () => { show(el.paywall, false); goMenu(); };
+
+/* ------------------------------------------------------------------
+   END
+------------------------------------------------------------------ */
+const LADDER = [
+  [100,"\u{1F451}","PERFECT"],[90,"\u{1F48E}","BRILLIANT"],[80,"\u{1F525}","INCREDIBLE"],
+  [70,"\u{1F3AF}","OUTSTANDING"],[60,"⭐","GREAT WORK"],[50,"\u{1F44D}","GOOD EFFORT"],[0,"\u{1F331}","KEEP GOING"]
+];
+function showEnd() {
+  const pct = Math.round(score / TOTAL * 100);
+  const r = LADDER.find(x => pct >= x[0]);
+  $("end-emoji").textContent = r[1];
+  $("end-grade").textContent = r[2] + " " + pct + "%";
+  $("end-score").textContent = "YOU SCORED " + score + " OUT OF " + TOTAL;
+  clearSave();
+  showScreen("end");
+}
+
+/* ------------------------------------------------------------------
+   NAVIGATION
+------------------------------------------------------------------ */
+function goMenu() { clearTimeout(timer); refreshMenu(); showScreen("menu"); }
+
+function startNew() {
+  clearSave(); score = 0; done = 0; frontier = 0;
+  showScreen("game"); actx(); renderPage(0);
+}
+function continueGame() {
+  score = Number(lsGet(K.sc)) || 0; done = Number(lsGet(K.dn)) || 0;
+  frontier = Math.min(Number(lsGet(K.pi)) || 0, PAGES.length - 1);
+  showScreen("game"); actx();
+  if (PAYWALL_ENABLED && !purchased && frontier >= GATE_PAGE_INDEX) { renderPage(frontier); showPaywall(); return; }
+  renderPage(frontier);
+}
+
+el.begin.onclick = () => {
+  if (!PAGES.length) return;
+  startNew();
+};
+el.cont.onclick = () => { if (PAGES.length) continueGame(); };
+$("again-btn").onclick = () => startNew();
+
+el.back.onclick = () => {
+  clearTimeout(timer);
+  if (pageIdx > 0) renderPage(pageIdx - 1);
+  else goMenu();
+};
+
+/* ------------------------------------------------------------------
+   OVERLAYS
+------------------------------------------------------------------ */
+function openOverlay(id) { show($(id), true); }
+document.querySelectorAll("[data-close]").forEach(b => b.onclick = () => show($(b.dataset.close), false));
+$("menu-verbs").onclick = () => openOverlay("verbs-overlay");
+$("verbs-btn").onclick = () => openOverlay("verbs-overlay");
+$("menu-how").onclick = () => { setLang(curLang); openOverlay("how-overlay"); };
+
+(function buildForms() {
+  const tb = $("forms-body");
+  FORMS.forEach(r => {
+    const tr = document.createElement("tr");
+    r.forEach(c => { const td = document.createElement("td"); td.textContent = c; tr.appendChild(td); });
+    tb.appendChild(tr);
+  });
+})();
+
+let curLang = "en";
+function setLang(code) {
+  curLang = code;
+  const L = HOW[code];
+  $("how-title").textContent = L.t;
+  $("how-close").textContent = L.ok;
+  const ol = $("how-list"); ol.innerHTML = "";
+  ol.dir = L.rtl ? "rtl" : "ltr";
+  L.i.forEach(s => { const li = document.createElement("li"); li.textContent = s; ol.appendChild(li); });
+  document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", c.dataset.l === code));
+}
+(function buildChips() {
+  const box = $("lang-chips");
+  Object.keys(HOW).forEach(code => {
+    const c = document.createElement("button");
+    c.className = "chip"; c.dataset.l = code; c.textContent = HOW[code].n;
+    c.onclick = () => setLang(code);
+    box.appendChild(c);
+  });
+})();
+
+/* ------------------------------------------------------------------
+   BOOT
+------------------------------------------------------------------ */
+$("quest-link").href = QUEST_URL;
+try { if (/[?&]full=1/.test(location.search)) lsSet(K.buy, "1"); } catch (e) {}
+purchased = lsGet(K.buy) === "1";
+setLang("en");
+
+fetch(DATA_URL)
+  .then(r => { if (!r.ok) throw new Error("Could not load " + DATA_URL); return r.json(); })
+  .then(data => {
+    PAGES = data;
+    TOTAL = data.reduce((n, p) => n + p.gap_ids.length, 0);
+    $("count-text").textContent = "0 / " + TOTAL;
+    refreshMenu();
+  })
+  .catch(err => {
+    console.error(err);
+    el.begin.disabled = true;
+    el.begin.textContent = "Loading failed";
+  });
+</script>
+</body>
+</html>
