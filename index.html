@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zafir: Out of the Oasis</title>
+<style>
+  :root {
+    --sand: #f2e2c4;
+    --brown: #6b4423;
+    --brown-dark: #4a2f18;
+    --gold: #d4a934;
+    --terracotta: #c1502e;
+    --night: #1c2b45;
+    --good: #3f8f52;
+    --bad: #a3392f;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: var(--night);
+    font-family: 'Georgia', 'Iowan Old Style', serif;
+    color: var(--sand);
+    -webkit-tap-highlight-color: transparent;
+  }
+  #app {
+    max-width: 520px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--night);
+  }
+  #topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  #progress-track {
+    flex: 1;
+    height: 4px;
+    margin: 0 12px;
+    background: rgba(212,169,52,0.2);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  #progress-fill {
+    height: 100%;
+    background: var(--gold);
+    width: 0%;
+    transition: width 0.35s ease;
+  }
+  #scene-wrap {
+    position: relative;
+    width: 100%;
+    height: 58vh;
+    max-height: 520px;
+    min-height: 260px;
+    background: #0e1626;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  #scene-img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  #scene-img.loaded { opacity: 1; }
+  #story-strip {
+    background: var(--brown-dark);
+    border-top: 3px solid var(--gold);
+    padding: 18px 20px 16px;
+    font-size: 17px;
+    line-height: 1.55;
+    min-height: 92px;
+  }
+  .gap-token {
+    display: inline;
+    white-space: nowrap;
+    color: var(--gold);
+    font-weight: bold;
+  }
+  .gap-token.filled { color: var(--sand); border-bottom: 2px solid var(--gold); }
+  .gap-token.active { color: #ffe9a8; }
+  #options {
+    display: flex;
+    gap: 10px;
+    padding: 14px 18px 8px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .opt-btn {
+    position: relative;
+    width: 92px;
+    height: 60px;
+    border: 2px solid #8a5a2b;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #f6e8c9 0%, #e2c88f 100%);
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    transition: transform 0.08s ease, opacity 0.2s ease;
+    overflow: hidden;
+    font-family: inherit;
+  }
+  .opt-btn .opt-label {
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2a1a0d;
+    pointer-events: none;
+  }
+  .opt-btn:active { transform: translateY(2px); }
+  .opt-btn:disabled { cursor: default; }
+  .opt-btn.dim { opacity: 0.4; }
+  .opt-btn.tint-correct {
+    background: linear-gradient(180deg, #8fd3a0 0%, #4fa566 100%);
+    border-color: #2f7a45;
+  }
+  .opt-btn.tint-wrong {
+    background: linear-gradient(180deg, #e59a92 0%, #c24a42 100%);
+    border-color: #8f2a24;
+  }
+  #footer-msg {
+    text-align: center;
+    font-size: 14px;
+    color: var(--gold);
+    min-height: 20px;
+    padding: 4px 22px 14px;
+    line-height: 1.4;
+  }
+  #footer-msg .explain {
+    display: block;
+    color: #f2b3a3;
+    margin-bottom: 6px;
+  }
+  #footer-msg .try-again {
+    display: block;
+    font-weight: bold;
+    color: var(--gold);
+  }
+  #end-screen, #intro-screen {
+    display: none;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+  #intro-screen { display: flex; }
+  #end-screen h1, #intro-screen h1 { color: var(--gold); font-size: 26px; margin-bottom: 12px; }
+  #end-screen p, #intro-screen p { font-size: 16px; line-height: 1.6; }
+  #intro-screen p { text-align: left; }
+  #restart-btn, #start-btn {
+    margin-top: 22px;
+    background: var(--terracotta);
+    color: var(--sand);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  #main-game { display: none; flex-direction: column; flex: 1; }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div id="intro-screen">
+    <h1>Zafir: Out of the Oasis</h1>
+    <p>Fill in each gap with the correct form of the verb shown.</p>
+    <p>A quick heads-up: in English, some verbs use the <em>same</em> word for more than one form — for example "put / put / put" or "have / had / had". When that happens, you'll see two buttons showing the same word. That's not a mistake — it's just English!</p>
+    <button id="start-btn">Begin</button>
+  </div>
+
+  <div id="main-game">
+    <div id="topbar">
+      <span id="wave-text">Wave 1</span>
+      <div id="progress-track"><div id="progress-fill"></div></div>
+      <span id="count-text">1 / 100</span>
+    </div>
+
+    <div id="scene-wrap">
+      <img id="scene-img" src="" alt="Scene">
+    </div>
+
+    <div id="story-strip">
+      <span id="story-text"></span>
+    </div>
+
+    <div id="options"></div>
+    <div id="footer-msg"></div>
+  </div>
+
+  <div id="end-screen">
+    <h1>End of Chapter One</h1>
+    <p>Zafir has reached the gates of Qalhara — but who is the figure in dark robes,<br>and why does he keep watching him instead of the festival?</p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+</div>
+
+<script>
+/* ------------------------------------------------------------------
+   CONFIG
+------------------------------------------------------------------ */
+const DATA_URL = "game1-pages-data.json";
+const IMG_ROOT = "";
+
+/* ------------------------------------------------------------------
+   SOUND — synthesized, no audio files needed
+------------------------------------------------------------------ */
+let audioCtx = null;
+function ctx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return audioCtx;
+}
+function tone(freq, start, dur, type, gain) {
+  const c = ctx();
+  const osc = c.createOscillator();
+  const g = c.createGain();
+  osc.type = type;
+  osc.frequency.value = freq;
+  g.gain.setValueAtTime(0, c.currentTime + start);
+  g.gain.linearRampToValueAtTime(gain, c.currentTime + start + 0.01);
+  g.gain.exponentialRampToValueAtTime(0.001, c.currentTime + start + dur);
+  osc.connect(g).connect(c.destination);
+  osc.start(c.currentTime + start);
+  osc.stop(c.currentTime + start + dur + 0.02);
+}
+function playCorrect() {
+  try {
+    tone(880, 0, 0.14, "sine", 0.18);
+    tone(1318.5, 0.09, 0.18, "sine", 0.16);
+  } catch(e) {}
+}
+function playWrong() {
+  try {
+    tone(180, 0, 0.22, "sawtooth", 0.12);
+  } catch(e) {}
+}
+
+/* ------------------------------------------------------------------
+   SCENE MAP
+------------------------------------------------------------------ */
+const SCENE_MAP = [
+  { from: 1,   file: "scene-1-oasis-pool.png" },
+  { from: 7,   file: "scene-2-travelers-arrive.png" },
+  { from: 21,  file: "scene-3-elders-permission.png" },
+  { from: 26,  file: "scene-4-farewell-gathering.png" },
+  { from: 34,  file: "scene-5-dawn-departure.png" },
+  { from: 41,  file: "scene-6-night-desert-camp.png" },
+  { from: 48,  file: "scene-7-storm-on-horizon.png" },
+  { from: 58,  file: "scene-8-canyon-oasis.png" },
+  { from: 61,  file: "scene-9-first-sight-of-qalhara.png" },
+  { from: 73,  file: "scene-10-watching-stranger.png" },
+  { from: 93,  file: "scene-11-fireworks-cliffhanger.png" }
+];
+
+function sceneForGap(id) {
+  let file = SCENE_MAP[0].file;
+  for (const entry of SCENE_MAP) {
+    if (id >= entry.from) file = entry.file;
+  }
+  return IMG_ROOT + file;
+}
+
+/* ------------------------------------------------------------------
+   STATE
+------------------------------------------------------------------ */
+let PAGES = [];
+let currentPage = 0;
+let currentGapPos = 0; // index into current page's gap_ids
+let completedCount = 0;
+let locked = false;
+let currentSceneFile = "";
+
+const el = {
+  sceneImg: document.getElementById("scene-img"),
+  waveText: document.getElementById("wave-text"),
+  countText: document.getElementById("count-text"),
+  progressFill: document.getElementById("progress-fill"),
+  storyText: document.getElementById("story-text"),
+  options: document.getElementById("options"),
+  footer: document.getElementById("footer-msg"),
+  app: document.getElementById("app"),
+  mainGame: document.getElementById("main-game"),
+  introScreen: document.getElementById("intro-screen"),
+  startBtn: document.getElementById("start-btn"),
+  endScreen: document.getElementById("end-screen"),
+  restartBtn: document.getElementById("restart-btn")
+};
+
+/* ------------------------------------------------------------------
+   BOOT
+------------------------------------------------------------------ */
+fetch(DATA_URL)
+  .then(r => {
+    if (!r.ok) throw new Error("Could not load " + DATA_URL);
+    return r.json();
+  })
+  .then(data => {
+    PAGES = data;
+  })
+  .catch(err => {
+    el.footer.textContent = "Could not load game data — check that " + DATA_URL + " is next to this file.";
+    console.error(err);
+  });
+
+el.startBtn.addEventListener("click", () => {
+  if (!PAGES.length) return;
+  ctx(); // unlock audio on user gesture
+  el.introScreen.style.display = "none";
+  el.mainGame.style.display = "flex";
+  renderPage(0);
+});
+
+/* ------------------------------------------------------------------
+   RENDER ONE PAGE (one full sentence, one or more blanks)
+------------------------------------------------------------------ */
+function renderPage(index) {
+  currentPage = index;
+  currentGapPos = 0;
+  locked = false;
+  const page = PAGES[index];
+
+  el.waveText.textContent = "Wave " + page.wave + " — " + page.wave_title;
+  el.countText.textContent = completedCount + " / 100";
+  el.progressFill.style.width = (completedCount / 100 * 100) + "%";
+
+  const sceneFile = sceneForGap(page.gap_ids[0]);
+  if (sceneFile !== currentSceneFile) {
+    currentSceneFile = sceneFile;
+    el.sceneImg.classList.remove("loaded");
+    el.sceneImg.onload = () => el.sceneImg.classList.add("loaded");
+    el.sceneImg.src = sceneFile;
+  }
+
+  // build the sentence with a blank token for every gap in this page
+  let html = "";
+  page.parts.forEach(part => {
+    if (part.type === "text") {
+      html += escapeHtml(part.value) + " ";
+    } else {
+      html += `<span class="gap-token" data-gap-id="${part.id}">....</span> `;
+    }
+  });
+  el.storyText.innerHTML = html;
+
+  el.footer.textContent = "";
+  renderOptionsForCurrentGap();
+}
+
+function escapeHtml(s) {
+  const d = document.createElement("div");
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function renderOptionsForCurrentGap() {
+  const page = PAGES[currentPage];
+  const gapId = page.gap_ids[currentGapPos];
+  const gapData = page.gaps[gapId];
+
+  // mark current blank as active
+  page.gap_ids.forEach(gid => {
+    const tok = el.storyText.querySelector(`[data-gap-id="${gid}"]`);
+    if (tok) tok.classList.toggle("active", gid === gapId);
+  });
+
+  el.options.innerHTML = "";
+  const shuffled = [...gapData.options].sort(() => Math.random() - 0.5);
+
+  shuffled.forEach(optionText => {
+    const btn = document.createElement("button");
+    btn.className = "opt-btn";
+    btn.innerHTML = `<span class="opt-label">${escapeHtml(optionText)}</span>`;
+    btn.addEventListener("click", () => handleAnswer(btn, optionText, gapId, gapData));
+    el.options.appendChild(btn);
+  });
+}
+
+/* ------------------------------------------------------------------
+   HANDLE TAP
+------------------------------------------------------------------ */
+function handleAnswer(btn, chosen, gapId, gapData) {
+  if (locked || btn.disabled) return;
+
+  const isCorrect = chosen === gapData.correct;
+
+  if (isCorrect) {
+    locked = true;
+    btn.classList.add("tint-correct");
+    playCorrect();
+
+    const tok = el.storyText.querySelector(`[data-gap-id="${gapId}"]`);
+    if (tok) {
+      tok.textContent = gapData.correct;
+      tok.classList.add("filled");
+      tok.classList.remove("active");
+    }
+
+    completedCount++;
+    el.countText.textContent = completedCount + " / 100";
+    el.progressFill.style.width = (completedCount / 100 * 100) + "%";
+
+    [...el.options.children].forEach(b => {
+      b.disabled = true;
+      if (b !== btn) b.classList.add("dim");
+    });
+
+    const page = PAGES[currentPage];
+    const moreInPage = currentGapPos + 1 < page.gap_ids.length;
+
+    if (moreInPage) {
+      el.footer.textContent = "Nice.";
+      setTimeout(() => {
+        currentGapPos++;
+        locked = false;
+        el.footer.textContent = "";
+        renderOptionsForCurrentGap();
+      }, 1100);
+    } else {
+      el.footer.textContent = "Nice.";
+      setTimeout(() => {
+        if (currentPage + 1 < PAGES.length) {
+          renderPage(currentPage + 1);
+        } else {
+          showEnd();
+        }
+      }, 2400);
+    }
+  } else {
+    btn.classList.add("tint-wrong");
+    btn.disabled = true;
+    btn.classList.add("dim");
+    playWrong();
+    const explanation = (gapData.explanations && gapData.explanations[chosen]) || "";
+    el.footer.innerHTML = explanation
+      ? `<span class="explain">${escapeHtml(explanation)}</span><span class="try-again">Try again.</span>`
+      : "Try again.";
+  }
+}
+
+function showEnd() {
+  el.mainGame.style.display = "none";
+  el.endScreen.style.display = "flex";
+}
+
+el.restartBtn.addEventListener("click", () => {
+  el.endScreen.style.display = "none";
+  el.mainGame.style.display = "flex";
+  currentSceneFile = "";
+  completedCount = 0;
+  renderPage(0);
+});
+</script>
+</body>
+</html>
